@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" 
+        xmlns:h="http://www.w3.org/1999/xhtml" 
+        xmlns:jr="http://openrosa.org/javarosa" 
+        xmlns:orx="http://openrosa.org/xforms" 
+        xmlns:odk="http://www.opendatakit.org/xforms"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <h:head>
+        <h:title>Pediatric Behavioral Health Digital Toolkit Screening Measures</h:title>
+        <model>
+			<itext>
+				<translation lang="English">
+					<text id="yes">
+						<value>Yes</value>
+					</text>
+					<text id="no">
+						<value>No</value>
+					</text>
+					<text id="q1a">
+						<value>Your Age:</value>
+					</text>
+					<text id="qlahint">
+						<value>If it's less than 18 years old; Stop here; Only 18 years of age and above is qualified</value>
+					</text>
+					<text id="q1b">
+						<value>Are you the primary caregiver and living with the child?</value>
+					</text>
+					<text id="qlbhint">
+						<value>If NO--> STOP</value>
+					</text>
+					<text id="q1c">
+						<value>Is this the first time you are signing up for using the Digital Toolkit? </value>
+					</text>
+					
+					
+				</translation>
+				<translation lang="Luganda">
+					<text id="yes">
+						<value>Yye</value>
+					</text>
+					<text id="no">
+						<value>Nedda</value>
+					</text>
+					<text id="q1a">
+						<value>Emyaaka gyo:</value>
+					</text>
+					<text id="qlahint">
+						<value>Bwegiba tegisukka 18; Koma wano; Emyaka 18 n’okweyongerayo gyokka gye gikkirizibwa </value>
+					</text>
+					<text id="q1b">
+						<value>Gwe alabilira era ng’obeera n’omwana?</value>
+					</text>
+					<text id="qlbhint">
+						<value>Bweba Nedda, Koma Wano</value>
+					</text>
+					<text id="q1c">
+						<value>Guno gwemulundi ogusoose okwewandiisa okukozesa Digital Toolkit? </value>
+					</text>
+					
+					
+				</translation>
+			
+			</itext>
+			
+            <instance>
+                <data id="P-BHDT">
+                    <q1a/>
+					<q1b/>
+					<q1c/>
+                
+					 
+					<DeviceID/>
+					<StartTime/>
+					<EndTime/>
+					<instanceID/>
+					<SubscriberID/>
+					
+				</data>
+            </instance>
+            <bind nodeset="/data/instanceID" preload="uid" type="xsd:string"/>
+			<bind nodeset="/data/StartTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="start"/>
+			<bind nodeset="/data/EndTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="end"/>
+			<bind nodeset="/data/DeviceID" type="string" jr:preload="property" jr:preloadParams="deviceid"/>
+			<bind nodeset="/data/SubscriberID" type="string" jr:preload="property" jr:preloadParams="subscriberid"/>
+			<bind nodeset="/data/q1a" type="int" required="true()"/>
+			<bind nodeset="/data/q1b" required="true()" relevant="/data/q1a &gt;= 18" />
+			<bind nodeset="/data/q1c" required="true()" relevant="/data/q1a &gt;= 18" />
+        </model>
+    </h:head>
+    <h:body>
+		<!-- Eligibility Screening -->
+        <input ref="/data/q1a">
+			<label ref="jr:itext('q1a')"/>
+			<hint ref="jr:itext('qlahint')"></hint>
+		</input>
+		
+		<select1 ref="/data/q1b">
+			<label ref="jr:itext('q1b')"></label>
+			<hint ref="jr:itext('qlbhint')"></hint>
+			<item>
+				<label ref="jr:itext('yes')"></label>
+				<value>1</value>
+			</item>
+			<item>
+				<label ref="jr:itext('no')"></label>
+				<value>2</value>
+			</item>
+		</select1>
+		<select ref="/data/q1c">
+		<label ref="jr:itext('q1c')"></label>
+			<item>
+				<label ref="jr:itext('yes')"></label>
+				<value>1</value>
+			</item>
+			<item>
+				<label ref="jr:itext('no')"></label>
+				<value>2</value>
+			</item>
+		</select1>
+		
+    </h:body>
+</h:html>
