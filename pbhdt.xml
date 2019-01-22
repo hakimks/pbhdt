@@ -31,6 +31,9 @@
 					<text id="q1c">
 						<value>Is this the first time you are signing up for using the Digital Toolkit? </value>
 					</text>
+					<text id ="q2a">
+						<value>FBO ID:</value>
+					</text>
 					
 					
 				</translation>
@@ -56,6 +59,9 @@
 					<text id="q1c">
 						<value>Guno gwemulundi ogusoose okwewandiisa okukozesa Digital Toolkit? </value>
 					</text>
+					<text id ="q2a">
+						<value>Ennamba y’ekannisa/ekkerezia oba omuzigiti (FBO):</value>
+					</text>
 					
 					
 				</translation>
@@ -64,9 +70,15 @@
 			
             <instance>
                 <data id="P-BHDT">
-                    <q1a/>
-					<q1b/>
-					<q1c/>
+					<eligibility>
+						<q1a/>
+						<q1b/>
+						<q1c/>
+					</eligibility>
+					<demographic>
+						<q2a/>
+					</demographic>
+                    
                 
 					 
 					<DeviceID/>
@@ -82,41 +94,58 @@
 			<bind nodeset="/data/EndTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="end"/>
 			<bind nodeset="/data/DeviceID" type="string" jr:preload="property" jr:preloadParams="deviceid"/>
 			<bind nodeset="/data/SubscriberID" type="string" jr:preload="property" jr:preloadParams="subscriberid"/>
-			<bind nodeset="/data/q1a" type="int" required="true()"/>
-			<bind nodeset="/data/q1b" required="true()" relevant="/data/q1a &gt;= 18" />
-			<bind nodeset="/data/q1c" required="true()" relevant="/data/q1a &gt;= 18" />
+			<bind nodeset="/data/eligibility/q1a" type="int" required="true()"/>
+			<bind nodeset="/data/eligibility/q1b" required="true()" relevant="/data/eligibility/q1a &gt;= 18" />
+			<bind nodeset="/data/eligibility/q1c" required="true()" relevant="/data/eligibility/q1a &gt;= 18" />
+			<bind nodeset="/data/demographic" relevant="/data/eligibility/q1a &gt;= 18" />
+			
         </model>
     </h:head>
     <h:body>
 		<!-- Eligibility Screening -->
-        <input ref="/data/q1a">
-			<label ref="jr:itext('q1a')"/>
-			<hint ref="jr:itext('qlahint')"></hint>
-		</input>
+		<group ref="/data/eligibility">
+			<input ref="q1a">
+				<label ref="jr:itext('q1a')"/>
+				<hint ref="jr:itext('qlahint')"></hint>
+			</input>
+			
+			<select1 ref="q1b">
+				<label ref="jr:itext('q1b')"></label>
+				<hint ref="jr:itext('qlbhint')"></hint>
+				<item>
+					<label ref="jr:itext('yes')"></label>
+					<value>1</value>
+				</item>
+				<item>
+					<label ref="jr:itext('no')"></label>
+					<value>2</value>
+				</item>
+			</select1>
+			<select1 ref="q1c">
+			<label ref="jr:itext('q1c')"></label>
+				<item>
+					<label ref="jr:itext('yes')"></label>
+					<value>1</value>
+				</item>
+				<item>
+					<label ref="jr:itext('no')"></label>
+					<value>2</value>
+				</item>
+			</select1>
 		
-		<select1 ref="/data/q1b">
-			<label ref="jr:itext('q1b')"></label>
-			<hint ref="jr:itext('qlbhint')"></hint>
-			<item>
-				<label ref="jr:itext('yes')"></label>
-				<value>1</value>
-			</item>
-			<item>
-				<label ref="jr:itext('no')"></label>
-				<value>2</value>
-			</item>
-		</select1>
-		<select ref="/data/q1c">
-		<label ref="jr:itext('q1c')"></label>
-			<item>
-				<label ref="jr:itext('yes')"></label>
-				<value>1</value>
-			</item>
-			<item>
-				<label ref="jr:itext('no')"></label>
-				<value>2</value>
-			</item>
-		</select1>
+		</group>
+        
+		
+		<!-- Demographic -->
+		<group ref="/data/demographic">
+			<input ref="q2a">
+				<label ref="jr:itext('q2a')"/>
+			</input>
+		
+		
+		</group>
+		
+		
 		
     </h:body>
 </h:html>
