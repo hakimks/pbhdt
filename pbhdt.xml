@@ -75,10 +75,28 @@
 						<q1b/>
 						<q1c/>
 					</eligibility>
+					
 					<demographic>
 						<q2a/>
+						<q2b/>
+						<q2c/>
+						<q2d/>
+						<q2e/>
+						<q2f/>
+						<q2g/>
+						<q2h/>
+						<q2i/>
+						<q2j/>
+						<q2k/>
+						<q2l/>
+						<q2m/>
+						<q2n/>
 					</demographic>
                     
+					<empathic-Behaviors>
+					
+					
+					</empathic-Behaviors>
                 
 					 
 					<DeviceID/>
@@ -98,6 +116,16 @@
 			<bind nodeset="/data/eligibility/q1b" required="true()" relevant="/data/eligibility/q1a &gt;= 18" />
 			<bind nodeset="/data/eligibility/q1c" required="true()" relevant="/data/eligibility/q1a &gt;= 18" />
 			<bind nodeset="/data/demographic" relevant="/data/eligibility/q1a &gt;= 18" />
+			<bind nodeset="/data/demographic/q2b" type="int" />
+			<bind nodeset="/data/demographic/q2c" type="int" />
+			<bind nodeset="/data/demographic/q2d" />
+			<bind nodeset="/data/demographic/q2e" />
+			<bind nodeset="/data/demographic/q2f" />
+			<bind nodeset="/data/demographic/q2g" />
+			<bind nodeset="/data/demographic/q2h" type="int"/>
+			<bind nodeset="/data/demographic/q2i" type="int"/>
+			<bind nodeset="/data/demographic/q2k" />
+			
 			
         </model>
     </h:head>
@@ -141,9 +169,156 @@
 			<input ref="q2a">
 				<label ref="jr:itext('q2a')"/>
 			</input>
-		
-		
+			<input ref="q2b">
+				<label>Family ID:</label>
+			</input>
+			<input ref="q2c">
+				<label>Child ID:</label>
+			</input>
+			<input ref="q2d">
+				<label>Child’s Age in Years/Months:</label>
+			</input>
+			<select1 ref="q2e">
+				<label>Attends school or early childhood care:</label>
+				<item>
+					<label>Yes</label>
+					<value>1</value>
+				</item>
+				<item>
+					<label>No</label>
+					<value>0</value>
+				</item>
+			</select1>
+			
+			<input ref="q2f">
+			<lable>If in primary school, which grade:</lable>
+			</input>
+			<select1 ref="q2g">
+				<label>Has the child ever uses the Digital Toolkit before:</label>
+				<item>
+					<label>Yes</label>
+					<value>1</value>
+				</item>
+				<item>
+					<label>No</label>
+					<value>0</value>
+				</item>
+			</select1>
+			<input ref="q2h">
+			<lable>Number of children at home:</lable>
+			</input> 
+			<input ref="q2i">
+			<lable>Number of adults at home:</lable>
+			</input>  
+			<select1 ref="q2j">
+				<label>Your gender:</label>
+				<item>
+					<label>Male</label>
+					<value>1</value>
+				</item>
+				<item>
+					<label>Female</label>
+					<value>0</value>
+				</item>
+			</select1>
+			<select1 ref="q2k">
+				<label>Your relationship with the child:</label>
+				<item>
+					<label>Mother</label>
+					<value>1</value>
+				</item>
+				<item>
+					<label>Father</label>
+					<value>2</value>
+				</item>
+				<item>
+					<label>Grandparent</label>
+					<value>3</value>
+				</item>
+				<item>
+					<label>Other</label>
+					<value>4</value>
+				</item>
+			</select1>
+			
+			<select1 ref="q2l">
+				<label>What is Your Religion:</label>
+				<item>
+					<label>No religion</label>
+					<value>0</value>
+				</item>
+				<item>
+					<label>Muslim</label>
+					<value>1</value>
+				</item>
+				<item>
+					<label>Christian</label>
+					<value>2</value>
+				</item>
+				<item>
+					<label>Catholic</label>
+					<value>3</value>
+				</item>
+				<item>
+					<label>Other religion </label>
+					<value>4</value>
+				</item>
+			</select1>
+			<select1 ref="q2m">
+				<label>Your highest education:</label>
+				<item>
+					<label>None</label>
+					<value>0</value>
+				</item>
+				<item>
+					<label>Primary</label>
+					<value>1</value>
+				</item>
+				<item>
+					<label>O’level</label>
+					<value>2</value>
+				</item>
+				<item>
+					<label>A’level</label>
+					<value>3</value>
+				</item>
+				<item>
+					<label>Tertiary </label>
+					<value>4</value>
+				</item>
+				<item>
+					<label>Non Standard Curriculum </label>
+					<value>5</value>
+				</item>
+			</select1>
+			<select1 ref="q2n">
+				<label>Maritial Status:</label>
+				<item>
+					<label>Single (Single/Widow/or Divorced) </label>
+					<value>0</value>
+				</item>
+				<item>
+					<label>Married</label>
+					<value>1</value>
+				</item>
+				<item>
+					<label>Not married but live with a partner</label>
+					<value>2</value>
+				</item>
+				<item>
+					<label>other</label>
+					<value>3</value>
+				</item>
+				</select1>
+			
 		</group>
+		
+		<!-- Child Social Development -->
+		<group ref="/data/empathic-Behaviors">
+		
+		
+		
+		</group
 		
 		
 		
