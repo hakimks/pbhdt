@@ -209,12 +209,12 @@
 		<group ref="/data/eligibility">
 			<input ref="E1">
 				<label>Your Age</label>
-				<hint ref="If less than 18 years old; Stop here; Only greater than or equall to 18 years of age is qualified"></hint>
+				<hint>If less than 18 years old; Stop here; Only greater than or equall to 18 years of age is qualified"></hint>
 			</input>
 			
 			<select1 ref="E2">
 				<label>Are you the primary caregiver and living with the child?"</label>
-				<hint ref="If NO,  STOP"></hint>
+				<hint>If NO,  STOP"></hint>
 				<item>
 					<label ref="jr:itext('yes')"></label>
 					<value>1</value>
@@ -242,7 +242,7 @@
 		<group ref="/data/demographic">
 		
 			<input ref="D1">
-				<label>FBO ID:</labe>
+				<label>FBO ID:</label>
 			</input>
 			<input ref="D2">
 				<label>Family ID:</label>
