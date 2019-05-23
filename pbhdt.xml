@@ -16,52 +16,9 @@
 					<text id="no">
 						<value>No</value>
 					</text>
-					<text id="q1a">
-						<value>Your Age:</value>
-					</text>
-					<text id="qlahint">
-						<value>If it's less than 18 years old; Stop here; Only 18 years of age and above is qualified</value>
-					</text>
-					<text id="q1b">
-						<value>Are you the primary caregiver and living with the child?</value>
-					</text>
-					<text id="qlbhint">
-						<value>If NO--> STOP</value>
-					</text>
-					<text id="q1c">
-						<value>Is this the first time you are signing up for using the Digital Toolkit? </value>
-					</text>
-					<text id ="q2a">
-						<value>FBO ID:</value>
-					</text>
-					
-					
 				</translation>
 				<translation lang="Luganda">
-					<text id="yes">
-						<value>Yye</value>
-					</text>
-					<text id="no">
-						<value>Nedda</value>
-					</text>
-					<text id="q1a">
-						<value>Emyaaka gyo:</value>
-					</text>
-					<text id="qlahint">
-						<value>Bwegiba tegisukka 18; Koma wano; Emyaka 18 n’okweyongerayo gyokka gye gikkirizibwa </value>
-					</text>
-					<text id="q1b">
-						<value>Gwe alabilira era ng’obeera n’omwana?</value>
-					</text>
-					<text id="qlbhint">
-						<value>Bweba Nedda, Koma Wano</value>
-					</text>
-					<text id="q1c">
-						<value>Guno gwemulundi ogusoose okwewandiisa okukozesa Digital Toolkit? </value>
-					</text>
-					<text id ="q2a">
-						<value>Ennamba y’ekannisa/ekkerezia oba omuzigiti (FBO):</value>
-					</text>
+					
 				</translation>
 			
 			</itext>
@@ -69,29 +26,29 @@
             <instance>
                 <data id="P-BHDT">
 					<eligibility>
-						<q1a/>
-						<q1b/>
-						<q1c/>
+						<E1/>
+						<E2/>
+						<E3/>
 					</eligibility>
 					
 					<demographic>
-						<q2a/>
-						<q2b/>
-						<q2c/>
-						<q2dyears/>
-						<q2dmonths/>
-						<q2e/>
-						<q2f/>
-						<q2g/>
-						<q2h/>
-						<q2i/>
-						<q2j/>
-						<q2k/>
-						<q2kspecify/>
-						<q2l/>
-						<q2lspecify/>
-						<q2m/>
-						<q2n/>
+						<D1/>
+						<D2/>
+						<D3/>
+						<D4years/>
+						<D4months/>
+						<D5/>
+						<D6/>
+						<D7/>
+						<D8/>
+						<D9/>
+						<D10/>
+						<D10specify/>
+						<D11/>
+						<D11specify/>
+						<D12/>
+						<D13/>
+						<D13specify/>
 					</demographic>
                     
 					<empathic-Behaviors>
@@ -157,27 +114,29 @@
 			<bind nodeset="/data/EndTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="end"/>
 			<bind nodeset="/data/DeviceID" type="string" jr:preload="property" jr:preloadParams="deviceid"/>
 			<bind nodeset="/data/SubscriberID" type="string" jr:preload="property" jr:preloadParams="subscriberid"/>
-			<bind nodeset="/data/eligibility/q1a" type="int" required="true()"/>
-			<bind nodeset="/data/eligibility/q1b" required="true()" relevant="/data/eligibility/q1a &gt;= 18" />
-			<bind nodeset="/data/eligibility/q1c" required="true()" relevant="/data/eligibility/q1a &gt;= 18 and /data/eligibility/q1b = 1 " />
-			<bind nodeset="/data/demographic" relevant="/data/eligibility/q1a &gt;= 18 and /data/eligibility/q1b = 1 " />
-			<bind nodeset="/data/demographic/q2b" type="int" />
-			<bind nodeset="/data/demographic/q2c" type="int" />
-			<bind nodeset="/data/demographic/q2dyears" type="int" constraint=". &gt; 0 " jr:constraintMsg="Child’s years can not be 0"/>
-			<bind nodeset="/data/demographic/q2dmonths" type="int" constraint=". &gt; 0 " jr:constraintMsg="Child’s Months can not be 0"/>
-			<bind nodeset="/data/demographic/q2e" />
-			<bind nodeset="/data/demographic/q2f" />
-			<bind nodeset="/data/demographic/q2g" />
-			<bind nodeset="/data/demographic/q2h" type="int"/>
-			<bind nodeset="/data/demographic/q2i" type="int"/>
-			<bind nodeset="/data/demographic/q2k" required="true()" />
-			<bind nodeset="/data/demographic/q2kspecify" relevant="/data/demographic/q2k = 4" />
-			<bind nodeset="/data/demographic/q2l" required="true()" />
-			<bind nodeset="/data/demographic/q2lspecify" relevant="/data/demographic/q2l = 4"/>
-			<bind nodeset="/data/demographic/q2m" />
-			<bind nodeset="/data/demographic/q2n" />
 			
-			<bind nodeset="/data/empathic-Behaviors" relevant="/data/eligibility/q1a &gt;= 18 and /data/eligibility/q1b = 1 " />
+			<bind nodeset="/data/eligibility/E1" type="int" required="true()"/>
+			<bind nodeset="/data/eligibility/E2" required="true()" relevant="/data/eligibility/E1 &gt;= 18" />
+			<bind nodeset="/data/eligibility/E3" required="true()" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
+			
+			<bind nodeset="/data/demographic" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
+			<bind nodeset="/data/demographic/D2" type="int" />
+			<bind nodeset="/data/demographic/D3" type="int" />
+			<bind nodeset="/data/demographic/D4years" type="int" constraint=". &gt; 0 " jr:constraintMsg="Child’s years can not be 0"/>
+			<bind nodeset="/data/demographic/D4months" type="int" constraint=". &gt; 0 " jr:constraintMsg="Child’s Months can not be 0"/>
+			<bind nodeset="/data/demographic/D5" />
+			<bind nodeset="/data/demographic/D6" />
+			<bind nodeset="/data/demographic/D7" type="int"/>
+			<bind nodeset="/data/demographic/D8" type="int"/>
+			<bind nodeset="/data/demographic/D10" />
+			<bind nodeset="/data/demographic/D10specify" relevant="/data/demographic/D10 = 4" />
+			<bind nodeset="/data/demographic/D11" />
+			<bind nodeset="/data/demographic/D11specify" relevant="/data/demographic/D11 = 4"/>
+			<bind nodeset="/data/demographic/D12" />
+			<bind nodeset="/data/demographic/D13" />
+			<bind nodeset="/data/demographic/D13specify" relevant="/data/dedication/D13 = 3"/>
+			
+			<bind nodeset="/data/empathic-Behaviors" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
 			<bind nodeset="/data/empathic-Behaviors/q3a" />
 			<bind nodeset="/data/empathic-Behaviors/q3b" />
 			<bind nodeset="/data/empathic-Behaviors/q3c" />
@@ -189,7 +148,7 @@
 			<bind nodeset="/data/empathic-Behaviors/q3i" />
 			<bind nodeset="/data/empathic-Behaviors/q3j" />
 			
-			<bind nodeset="/data/pear-relationship" relevant="/data/eligibility/q1a &gt;= 18 and /data/eligibility/q1b = 1 " />
+			<bind nodeset="/data/pear-relationship" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
 			<bind nodeset="/data/pear-relationship/q4a" />
 			<bind nodeset="/data/pear-relationship/q4b" />
 			<bind nodeset="/data/pear-relationship/q4c" />
@@ -200,7 +159,7 @@
 			<bind nodeset="/data/pear-relationship/q4h" />
 			<bind nodeset="/data/pear-relationship/q4i" />
 			
-			<bind nodeset="/data/family-relationship" relevant="/data/eligibility/q1a &gt;= 18 and /data/eligibility/q1b = 1 " />
+			<bind nodeset="/data/family-relationship" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
 			<bind nodeset="/data/family-relationship/q5a" />
 			<bind nodeset="/data/family-relationship/q5b" />
 			<bind nodeset="/data/family-relationship/q5c" />
@@ -212,7 +171,7 @@
 			<bind nodeset="/data/family-relationship/q5i" />
 			<bind nodeset="/data/family-relationship/q5j" />
 			
-			<bind nodeset="/data/anger" relevant="/data/eligibility/q1a &gt;= 18 and /data/eligibility/q1b = 1 " />
+			<bind nodeset="/data/anger" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
 			<bind nodeset="/data/anger/q6a" />
 			<bind nodeset="/data/anger/q6b" />
 			<bind nodeset="/data/anger/q6c" />
@@ -228,14 +187,14 @@
     <h:body>
 		<!-- Eligibility Screening -->
 		<group ref="/data/eligibility">
-			<input ref="q1a">
-				<label ref="jr:itext('q1a')"/>
-				<hint ref="jr:itext('qlahint')"></hint>
+			<input ref="E1">
+				<label ref="Your Age"/>
+				<hint ref="If <18 years old; Stop here; Only >=18 years of age is qualified"></hint>
 			</input>
 			
-			<select1 ref="q1b">
-				<label ref="jr:itext('q1b')"></label>
-				<hint ref="jr:itext('qlbhint')"></hint>
+			<select1 ref="E2">
+				<label ref="Are you the primary caregiver and living with the child?"></label>
+				<hint ref="If NO--> STOP"></hint>
 				<item>
 					<label ref="jr:itext('yes')"></label>
 					<value>1</value>
@@ -245,8 +204,8 @@
 					<value>0</value>
 				</item>
 			</select1>
-			<select1 ref="q1c">
-			<label ref="jr:itext('q1c')"></label>
+			<select1 ref="E3">
+			<label ref="Is this the first time you are signing up for using the Digital Toolkit? "></label>
 				<item>
 					<label ref="jr:itext('yes')"></label>
 					<value>1</value>
@@ -256,62 +215,49 @@
 					<value>0</value>
 				</item>
 			</select1>
-		
 		</group>
         
 		
 		<!-- Demographic -->
 		<group ref="/data/demographic">
 		
-			<input ref="q2a">
-				<label ref="jr:itext('q2a')"/>
+			<input ref="D1">
+				<label ref="FBO ID"/>
 			</input>
-			<input ref="q2b">
+			<input ref="D2">
 				<label>Family ID:</label>
 			</input>
-			<input ref="q2c">
+			<input ref="D3">
 				<label>Child ID:</label>
 			</input>
-			<input ref="q2dyears">
+			<input ref="D4years">
 				<label>Child’s Age in Years:</label>
 			</input>
-			<input ref="q2dmonths">
+			<input ref="D4months">
 				<label>Child’s Age in Months:</label>
 			</input>
 			
-			<select1 ref="q2e">
+			<select1 ref="D5">
 				<label>Attends school or early childhood care:</label>
 				<item>
-					<label>Yes</label>
+					<label ref="jr:itext('yes')"></label>
 					<value>1</value>
 				</item>
 				<item>
-					<label>No</label>
+					<label ref="jr:itext('no')"></label>
 					<value>0</value>
 				</item>
 			</select1>
-			
-			<input ref="q2f">
-			<label>If in primary school, which grade:</label>
+			<input ref="D6">
+				<label>If in primary school, which grade:</label>
 			</input>
-			<select1 ref="q2g">
-				<label>Has the child ever uses the Digital Toolkit before:</label>
-				<item>
-					<label>Yes</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>No</label>
-					<value>0</value>
-				</item>
-			</select1>
-			<input ref="q2h">
-			<label>Number of children at home:</label>
+			<input ref="D7">
+				<label>Number of children at home:</label>
 			</input> 
-			<input ref="q2i">
-			<label>Number of adults at home:</label>
+			<input ref="D8">
+				<label>Number of adults at home:</label>
 			</input>  
-			<select1 ref="q2j">
+			<select1 ref="D9">
 				<label>Your gender:</label>
 				<item>
 					<label>Male</label>
@@ -322,7 +268,7 @@
 					<value>0</value>
 				</item>
 			</select1>
-			<select1 ref="q2k">
+			<select1 ref="D10">
 				<label>Your relationship with the child:</label>
 				<item>
 					<label>Mother</label>
@@ -339,15 +285,12 @@
 				<item>
 					<label>Other</label>
 					<value>4</value>
-				
 				</item>
-			
 			</select1>
-			<input ref="q2kspecify" >
+			<input ref="D10specify" >
 				<label>Specify other relationship with the child</label>
 			</input>
-			
-			<select1 ref="q2l">
+			<select1 ref="D11">
 				<label>What is Your Religion:</label>
 				<item>
 					<label>No religion</label>
@@ -370,10 +313,10 @@
 					<value>4</value>
 				</item>
 			</select1>
-			<input ref="q2lspecify" >
+			<input ref="D11specify" >
 				<label>Specify other religion</label>
 			</input>
-			<select1 ref="q2m">
+			<select1 ref="D12">
 				<label>Your highest education:</label>
 				<item>
 					<label>None</label>
@@ -400,8 +343,8 @@
 					<value>5</value>
 				</item>
 			</select1>
-			<select1 ref="q2n">
-				<label>Maritial Status:</label>
+			<select1 ref="D13">
+				<label>Marital Status:</label>
 				<item>
 					<label>Single (Single/Widow/or Divorced) </label>
 					<value>0</value>
@@ -419,7 +362,9 @@
 					<value>3</value>
 				</item>
 				</select1>
-			
+			<input ref="D13specify" >
+				<label>Specify other Marital status</label>
+			</input>
 		</group>
 		
 		<!-- Child Social Development -->
