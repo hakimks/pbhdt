@@ -9,12 +9,21 @@
         <h:title>Pediatric Behavioral Health Digital Toolkit Screening Measures</h:title>
         <model>
 			<itext>
-				<translation lang="English">
+				<translation default=true() lang="English">
 					<text id="yes">
 						<value>Yes</value>
 					</text>
 					<text id="no">
 						<value>No</value>
+					</text>
+					<text id="pic1">
+						<value form="image">jr://images/pic1.jpg</value>
+					</text>
+					<text id="pic2">
+						<value form="image">jr://images/pic2.jpg</value>
+					</text>
+					<text id="pic3">
+						<value form="image">jr://images/pic2.jpg</value>
 					</text>
 				</translation>
 				<translation lang="Luganda">
@@ -52,6 +61,9 @@
 					</demographic>
                     
 					<empathic-Behaviors>
+						<picture1/>
+						<picture2/>
+						<picture3/>
 						<q3a/>
 						<q3b/>
 						<q3c/>
@@ -100,20 +112,25 @@
 					<q6h/>
 					<q6i/>					
 					</anger>
-					 
-					<DeviceID/>
-					<StartTime/>
-					<EndTime/>
-					<instanceID/>
-					<SubscriberID/>
+					<meta>
+						<DeviceID/>
+						<StartTime/>
+						<EndTime/>
+						<instanceID/>
+						<SubscriberID/>
+						<phoneNumber/>
+					</meta>
+					
+					
 					
 				</data>
             </instance>
-            <bind nodeset="/data/instanceID" preload="uid" type="xsd:string"/>
-			<bind nodeset="/data/StartTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="start"/>
-			<bind nodeset="/data/EndTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="end"/>
-			<bind nodeset="/data/DeviceID" type="string" jr:preload="property" jr:preloadParams="deviceid"/>
-			<bind nodeset="/data/SubscriberID" type="string" jr:preload="property" jr:preloadParams="subscriberid"/>
+            <bind nodeset="/data/meta/instanceID" preload="uid" type="xsd:string"/>
+			<bind nodeset="/data/meta/StartTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="start"/>
+			<bind nodeset="/data/meta/EndTime" type="dateTime" jr:preload="timestamp" jr:preloadParams="end"/>
+			<bind nodeset="/data/meta/DeviceID" type="string" jr:preload="property" jr:preloadParams="deviceid"/>
+			<bind nodeset="/data/meta/SubscriberID" type="string" jr:preload="property" jr:preloadParams="subscriberid"/>
+			<bind nodeset="/data/meta/phoneNumber" type="string" jr:preload="property" jr:preloadParams="phone number"/>
 			
 			<bind nodeset="/data/eligibility/E1" type="int" required="true()"/>
 			<bind nodeset="/data/eligibility/E2" required="true()" relevant="/data/eligibility/E1 &gt;= 18" />
@@ -137,6 +154,9 @@
 			<bind nodeset="/data/demographic/D13specify" relevant="/data/dedication/D13 = 3"/>
 			
 			<bind nodeset="/data/empathic-Behaviors" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
+			<bind nodeset="/data/empathic-Behaviors/picture1" readonly="true()" />
+			<bind nodeset="/data/empathic-Behaviors/picture2" readonly="true()" />
+			<bind nodeset="/data/empathic-Behaviors/picture3" readonly="true()" />
 			<bind nodeset="/data/empathic-Behaviors/q3a" />
 			<bind nodeset="/data/empathic-Behaviors/q3b" />
 			<bind nodeset="/data/empathic-Behaviors/q3c" />
@@ -369,7 +389,20 @@
 		
 		<!-- Child Social Development -->
 		<group ref="/data/empathic-Behaviors">
-		<label>In the past month, please describe……….</label>
+		<label>In today’s discussion, we will talk about……. your child’s behaviors and relationship; your parenting approaches and strategies; and your family relationship and resources to support your child/children. </label>
+		<!-- pictures to display -->
+		<input ref="picture1">
+			<label ref="jr:itext('pic1')"></label>
+			<hint>Child’s behaviors and relationship  </hint>
+		</input>
+		<input ref="picture2">
+			<label ref="jr:itext('pic1')"></label>
+			<hint>Parenting approaches</hint>
+		</input>
+		<input ref="picture2">
+			<label ref="jr:itext('pic1')"></label>
+			<hint>Family relationship and resources </hint>
+		</input>
 		
 		<select1 ref="q3a">
 				<label>1.How often has your child tried to stop a fight or argument </label>
