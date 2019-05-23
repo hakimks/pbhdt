@@ -9,7 +9,7 @@
         <h:title>Pediatric Behavioral Health Digital Toolkit Screening Measures</h:title>
         <model>
 			<itext>
-				<translation default=true() lang="English">
+				<translation default="true()" lang="English">
 					<text id="yes">
 						<value>Yes</value>
 					</text>
@@ -208,13 +208,13 @@
 		<!-- Eligibility Screening -->
 		<group ref="/data/eligibility">
 			<input ref="E1">
-				<label ref="Your Age"/>
-				<hint ref="If <18 years old; Stop here; Only >=18 years of age is qualified"></hint>
+				<label>Your Age</label>
+				<hint ref="If less than 18 years old; Stop here; Only greater than or equall to 18 years of age is qualified"></hint>
 			</input>
 			
 			<select1 ref="E2">
-				<label ref="Are you the primary caregiver and living with the child?"></label>
-				<hint ref="If NO--> STOP"></hint>
+				<label>Are you the primary caregiver and living with the child?"</label>
+				<hint ref="If NO,  STOP"></hint>
 				<item>
 					<label ref="jr:itext('yes')"></label>
 					<value>1</value>
@@ -225,7 +225,7 @@
 				</item>
 			</select1>
 			<select1 ref="E3">
-			<label ref="Is this the first time you are signing up for using the Digital Toolkit? "></label>
+			<label>Is this the first time you are signing up for using the Digital Toolkit?</label>
 				<item>
 					<label ref="jr:itext('yes')"></label>
 					<value>1</value>
