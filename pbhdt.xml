@@ -242,7 +242,7 @@
 		<group ref="/data/demographic">
 		
 			<input ref="D1">
-				<label ref="FBO ID"/>
+				<label>FBO ID:</labe>
 			</input>
 			<input ref="D2">
 				<label>Family ID:</label>
