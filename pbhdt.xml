@@ -59,59 +59,68 @@
 						<D13/>
 						<D13specify/>
 					</demographic>
-                    
-					<empathic-Behaviors>
-						<picture1/>
-						<picture2/>
-						<picture3/>
-						<q3a/>
-						<q3b/>
-						<q3c/>
-						<q3d/>
-						<q3e/>
-						<q3f/>
-						<q3g/>
-						<q3h/>
-						<q3i/>
-						<q3j/>
-					</empathic-Behaviors>
+					<social-development>
+						<empathic-Behaviors>
+							<picture1/>
+							<picture2/>
+							<picture3/>
+							<intro/>
+							<intro1/>
+							<EB1/>
+							<EB2/>
+							<EB3/>
+							<EB4/>
+							<EB5/>
+						</empathic-Behaviors>
+						<pear-relationship>
+							<PR1/>
+							<PR2/>
+							<PR3/>
+							<PR4/>
+						</pear-relationship>
+						<family-relationship>
+							<FR1/>
+							<FR2/>
+							<FR3/>
+							<FR4/>
+							<FR5/>
+							<FR6/>
+							<FR7/>
+							<FR8/>
+						</family-relationship>
+					</social-development>
+					<child-emotions>	
+						<anger>
+							<CHA1/>
+							<CHA2/>
+							<CHA3/>
+							<CHA4/>
+							<CHA5/>
+							<CHA6/>
+							<CHA7/>
+							<CHA8/>
+							<CHA9/>					
+						</anger>
+						<fear-over-anxious>
+							<FAO1/>
+							<FAO2/>
+							<FAO3/>
+							<FAO4/>
+							<FAO5/>
+							<FAO6/>
+						</fear-over-anxious>
+						<sadness>
+							<CES1/>
+							<CES2/>
+							<CES3/>
+							<CES4/>
+							<CES5/>
+							<CES6/>
+							<CES7/>
+						</sadness>
 					
-					<pear-relationship>
-						<q4a/>
-						<q4b/>
-						<q4c/>
-						<q4d/>
-						<q4e/>
-						<q4f/>
-						<q4g/>
-						<q4h/>
-						<q4i/>
-					</pear-relationship>	
-						
-					<family-relationship>
-						<q5a/>
-						<q5b/>
-						<q5c/>
-						<q5d/>
-						<q5e/>
-						<q5f/>
-						<q5g/>
-						<q5h/>
-						<q5i/>
-						<q5j/>
-					</family-relationship>			
-
-					<anger >
-					<q6a/>
-					<q6b/>
-					<q6c/>
-					<q6d/>
-					<q6e/>
-					<q6f/>
-					<q6g/>
-					<q6h/>
-					<q6i/>					
-					</anger>
+					</child-emotions>
+					
 					<meta>
 						<DeviceID/>
 						<StartTime/>
@@ -153,53 +162,27 @@
 			<bind nodeset="/data/demographic/D13" />
 			<bind nodeset="/data/demographic/D13specify" relevant="/data/dedication/D13 = 3"/>
 			
-			<bind nodeset="/data/empathic-Behaviors" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
-			<bind nodeset="/data/empathic-Behaviors/picture1" readonly="true()" />
-			<bind nodeset="/data/empathic-Behaviors/picture2" readonly="true()" />
-			<bind nodeset="/data/empathic-Behaviors/picture3" readonly="true()" />
-			<bind nodeset="/data/empathic-Behaviors/q3a" />
-			<bind nodeset="/data/empathic-Behaviors/q3b" />
-			<bind nodeset="/data/empathic-Behaviors/q3c" />
-			<bind nodeset="/data/empathic-Behaviors/q3d" />
-			<bind nodeset="/data/empathic-Behaviors/q3e" />
-			<bind nodeset="/data/empathic-Behaviors/q3f" />
-			<bind nodeset="/data/empathic-Behaviors/q3g" />
-			<bind nodeset="/data/empathic-Behaviors/q3h" />
-			<bind nodeset="/data/empathic-Behaviors/q3i" />
-			<bind nodeset="/data/empathic-Behaviors/q3j" />
+			<bind nodeset="/data/social-development" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
+			<bind nodeset="/data/social-development/empathic-Behaviors/picture1" readonly="true()" />
+			<bind nodeset="/data/social-development/empathic-Behaviors/picture2" readonly="true()" />
+			<bind nodeset="/data/social-development/empathic-Behaviors/picture3" readonly="true()" />
+			<bind nodeset="/data/social-development/empathic-Behaviors/intro" readonly="true()" />
+			<bind nodeset="/data/social-development/empathic-Behaviors/intro1" readonly="true()" />
+			<bind nodeset="/data/social-development/empathic-Behaviors/EB1" />
+			<bind nodeset="/data/social-development/empathic-Behaviors/EB2" />
+			<bind nodeset="/data/social-development/empathic-Behaviors/EB3" />
+			<bind nodeset="/data/social-development/empathic-Behaviors/EB4" />
+			<bind nodeset="/data/social-development/empathic-Behaviors/EB5" />
+						
+			<bind nodeset="/data/social-development/pear-relationship" />
 			
-			<bind nodeset="/data/pear-relationship" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
-			<bind nodeset="/data/pear-relationship/q4a" />
-			<bind nodeset="/data/pear-relationship/q4b" />
-			<bind nodeset="/data/pear-relationship/q4c" />
-			<bind nodeset="/data/pear-relationship/q4d" />
-			<bind nodeset="/data/pear-relationship/q4e" />
-			<bind nodeset="/data/pear-relationship/q4f" />
-			<bind nodeset="/data/pear-relationship/q4g" />
-			<bind nodeset="/data/pear-relationship/q4h" />
-			<bind nodeset="/data/pear-relationship/q4i" />
+			<bind nodeset="/data/social-development/family-relationship" />
 			
-			<bind nodeset="/data/family-relationship" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
-			<bind nodeset="/data/family-relationship/q5a" />
-			<bind nodeset="/data/family-relationship/q5b" />
-			<bind nodeset="/data/family-relationship/q5c" />
-			<bind nodeset="/data/family-relationship/q5d" />
-			<bind nodeset="/data/family-relationship/q5e" />
-			<bind nodeset="/data/family-relationship/q5f" />
-			<bind nodeset="/data/family-relationship/q5g" />
-			<bind nodeset="/data/family-relationship/q5h" />
-			<bind nodeset="/data/family-relationship/q5i" />
-			<bind nodeset="/data/family-relationship/q5j" />
 			
-			<bind nodeset="/data/anger" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
-			<bind nodeset="/data/anger/q6a" />
-			<bind nodeset="/data/anger/q6b" />
-			<bind nodeset="/data/anger/q6c" />
-			<bind nodeset="/data/anger/q6d" />
-			<bind nodeset="/data/anger/q6e" />
-			<bind nodeset="/data/anger/q6f" />
-			<bind nodeset="/data/anger/q6g" />
-			<bind nodeset="/data/anger/q6i" />
+			<bind nodeset="/data/child-emotions" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
+			<bind nodeset="/data/child-emotions/anger"/>
+			<bind nodeset="/data/child-emotions/fear-over-anxious" />
+			<bind nodeset="/data/child-emotions/sadness" />
 			
 			
         </model>
@@ -388,836 +371,764 @@
 		</group>
 		
 		<!-- Child Social Development -->
-		<group ref="/data/empathic-Behaviors">
-		<label>In today’s discussion, we will talk about……. your child’s behaviors and relationship; your parenting approaches and strategies; and your family relationship and resources to support your child/children. </label>
-		<!-- pictures to display -->
-		<input ref="picture1">
-			<label ref="jr:itext('pic1')"></label>
-			<hint>Child’s behaviors and relationship  </hint>
-		</input>
-		<input ref="picture2">
-			<label ref="jr:itext('pic1')"></label>
-			<hint>Parenting approaches</hint>
-		</input>
-		<input ref="picture2">
-			<label ref="jr:itext('pic1')"></label>
-			<hint>Family relationship and resources </hint>
-		</input>
-		
-		<select1 ref="q3a">
-				<label>1.How often has your child tried to stop a fight or argument </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
+		<group ref="/data/social-development">
+			<label>In today’s discussion, we will talk about……. your child’s behaviors and relationship; your parenting approaches and strategies; and your family relationship and resources to support your child/children. </label>
+			<!-- pictures to display -->
+			<input ref="picture1">
+				<label ref="jr:itext('pic1')"></label>
+				<hint>Child’s behaviors and relationship  </hint>
+			</input>
+			<input ref="picture2">
+				<label ref="jr:itext('pic1')"></label>
+				<hint>Parenting approaches</hint>
+			</input>
+			<input ref="picture2">
+				<label ref="jr:itext('pic1')"></label>
+				<hint>Family relationship and resources </hint>
+			</input>
+			<input ref="data/intro">
+				<label>A child’s growth is like a tree. There are five areas of child development (including social, emotional, behavioral, physical, and academic/learning). To support a strong tree, the child needs to have adequate nutrition, which is usually provided by parents and family members. All the areas listed in this picture are inter-related. For this part of the interview, I am going to ask you questions from each area. We will look at the results together after you have answered all the questions. </label>
+			</input>
+			<input ref="data/intro1">
+				<label>1=never, 2=rarely, 3=sometimes, 4=usually, 5=always</label>
+				<hint>In the past month, please describe……….</hint>
+			</input>
+			<group ref="empathic-Behaviors">
+				<select1 ref="EB1">
+					<label>How often has your child tried to stop a fight or argument </label>
+					<item>
+						<label>never</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>rarely</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>sometimes</label>
+						<value>3</value>
+					</item>
+					
+					<item>
+						<label>usually</label>
+						<value>4</value>
+					</item>
+					<item>
+						<label>always</label>
+						<value>5</value>
+					</item>
+				</select1>
 			
-			<select1 ref="q3b">
-				<label>2.How often has your child invited other children to join in a game  </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q3c">
-				<label>3.How often has your child tried to help someone who has been hurt  </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q3d">
-				<label>4.How often has your child shared candies and extra food  </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-				<select1 ref="q3e">
-				<label>5.How often has your child taken the opportunity to praise the work of less able children  </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q3f">
-				<label>6.How often has your child shown sympathy to someone who has made a mistake </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q3g">
-				<label>7.How often has your child offered to help other children who are having difficulty </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q3h">
-				<label>8.How often has your child helped other children who are feeling sick </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q3i">
-				<label>9.How often has your child comforted a child who is crying or upset   </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q3j">
-				<label>10. How often has your child clapped or smiled if someone else does something well </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-				
-		</group>
-		
-		<!-- pear-relationship -->
-		<group ref="/data/pear-relationship">
-		<label>In the past month, please describe……….</label>
-		
-		<select1 ref="q4a">
-				<label>1.How often your child has been left out by other children </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q4b">
-				<label>2.How often other children have refused to let your child play with them </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q4c">
-				<label>3.How often your child has not been chosen as a playmate   </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q4d">
-				<label>4.How often your child has been actively rejected by other children who refuse to play with him/her  </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q4e">
-				<label>5.How often your child has been avoided by other children  </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q4f">
-				<label>6.How often your child has not been well liked by other children </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q4g">
-				<label>7.How often your child has been picked on by other children </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q4h">
-				<label>8.How often your child has been teased and made fun of by other children </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-			
-			<select1 ref="q4i">
-				<label>9. How often your child has been pushed or shoved around by other children   </label>
-				<item>
-					<label>never</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>rarely</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>sometimes</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>usually</label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>always</label>
-					<value>5</value>
-				</item>
-			</select1>
-		</group> 
-		
-		<!-- family-relationship  -->
-		<group ref="/data/family-relationship">
-		<label>For each of the following statement, please tell me how much it is like your child…</label>
-		<label>1.Participates in family activities </label>
-			<select1 ref="q5a">
-				<item>
-					<label>Does not do this at all</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Does this a little</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Does this quite a bit</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Does this a lot</label>
-					<value>3</value>
-				</item>
+				<select1 ref="EB2">
+					<label>How often has your child shared candies and extra food  </label>
+					<item>
+						<label>never</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>rarely</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>sometimes</label>
+						<value>3</value>
+					</item>
+					<item>
+						<label>usually</label>
+						<value>4</value>
+					</item>
+					<item>
+						<label>always</label>
+						<value>5</value>
+					</item>
 				</select1>
 				
-				<label>2. Complies with rules at home </label>
-			<select1 ref="q5b">
-				<item>
-					<label>Does not do this at all</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Does this a little</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Does this quite a bit</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Does this a lot</label>
-					<value>3</value>
-				</item>
+				<select1 ref="EB3">
+					<label>How often has your child helped other children who are feeling sick </label>
+					<item>
+						<label>never</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>rarely</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>sometimes</label>
+						<value>3</value>
+					</item>
+					<item>
+						<label>usually</label>
+						<value>4</value>
+					</item>
+					<item>
+						<label>always</label>
+						<value>5</value>
+					</item>
 				</select1>
 				
-						<label>3.Participates in church or religion activities </label>
-			<select1 ref="q5c">
-				<item>
-					<label>Does not do this at all</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Does this a little</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Does this quite a bit</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Does this a lot</label>
-					<value>3</value>
-				</item>
+				<select1 ref="EB4">
+					<label>How often has your child comforted a child who is crying or upset  </label>
+					<item>
+						<label>never</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>rarely</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>sometimes</label>
+						<value>3</value>
+					</item>
+					<item>
+						<label>usually</label>
+						<value>4</value>
+					</item>
+					<item>
+						<label>always</label>
+						<value>5</value>
+					</item>
+				</select1>
+			
+				<select1 ref="EB5">
+					<label>How often has your child clapped or smiled if someone else does something well  </label>
+					<item>
+						<label>never</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>rarely</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>sometimes</label>
+						<value>3</value>
+					</item>
+					<item>
+						<label>usually</label>
+						<value>4</value>
+					</item>
+					<item>
+						<label>always</label>
+						<value>5</value>
+					</item>
+				</select1>
+			</group>
+			<!-- pear-relationship -->
+			<group ref="pear-relationship">
+				<label>In the past month, please describe……….</label>
+				<hint>1=never, 2=rarely, 3=sometimes, 4=usually, 5=always</hint>
+				<select1 ref="PR1">
+					<label>How often your child has been left out by other children </label>
+					<item>
+						<label>never</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>rarely</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>sometimes</label>
+						<value>3</value>
+					</item>
+					<item>
+						<label>usually</label>
+						<value>4</value>
+					</item>
+					<item>
+						<label>always</label>
+						<value>5</value>
+					</item>
 				</select1>
 				
-				
-			<label>4.Interacts positively with siblings</label>
-			<select1 ref="q5d">
-				<item>
-					<label>Does not do this at all</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Does this a little</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Does this quite a bit</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Does this a lot</label>
-					<value>3</value>
-				</item>
+				<select1 ref="PR2">
+					<label>How often other children have refused to let your child play with them </label>
+					<item>
+						<label>never</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>rarely</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>sometimes</label>
+						<value>3</value>
+					</item>
+					<item>
+						<label>usually</label>
+						<value>4</value>
+					</item>
+					<item>
+						<label>always</label>
+						<value>5</value>
+					</item>
 				</select1>
 				
-			<label>5.Interacts positively with parents </label>
-			<select1 ref="q5e">
-				<item>
-					<label>Does not do this at all</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Does this a little</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Does this quite a bit</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Does this a lot</label>
-					<value>3</value>
-				</item>
+				<select1 ref="PR3">
+					<label>How often your child has been teased and made fun of by other children  </label>
+					<item>
+						<label>never</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>rarely</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>sometimes</label>
+						<value>3</value>
+					</item>
+					<item>
+						<label>usually</label>
+						<value>4</value>
+					</item>
+					<item>
+						<label>always</label>
+						<value>5</value>
+					</item>
 				</select1>
 				
-				<label>6.Communicates with parents about behavior at home </label>
-			<select1 ref="q5f">
-				<item>
-					<label>Does not do this at all</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Does this a little</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Does this quite a bit</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Does this a lot</label>
-					<value>3</value>
-				</item>
+				<select1 ref="PR4">
+					<label>How often your child has been pushed or shoved around by other children </label>
+					<item>
+						<label>never</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>rarely</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>sometimes</label>
+						<value>3</value>
+					</item>
+					<item>
+						<label>usually</label>
+						<value>4</value>
+					</item>
+					<item>
+						<label>always</label>
+						<value>5</value>
+					</item>
 				</select1>
-				
-				<label>7.Maintains positive family relationships</label>
-			<select1 ref="q5g">
-				<item>
-					<label>Does not do this at all</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Does this a little</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Does this quite a bit</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Does this a lot</label>
-					<value>3</value>
-				</item>
+			</group> 
+			<!-- family-relationship  -->
+			<group ref="family-relationship">
+				<label>For each of the following statement, please tell me how much it is like your child…</label>
+				<hint>0=Does not do this at all, 1= Does this a little, 2= Does this quite a bit, 3=Does this a lot</hint>
+				<select1 ref="FR1">
+					<label>Participates in family activities </label>
+					<item>
+						<label>Does not do this at all</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Does this a little</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Does this quite a bit</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>Does this a lot</label>
+						<value>3</value>
+					</item>
+					</select1>
+					
+					
+				<select1 ref="FR2">
+					<label>Complies with rules at home </label>
+					<item>
+						<label>Does not do this at all</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Does this a little</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Does this quite a bit</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>Does this a lot</label>
+						<value>3</value>
+					</item>
+					</select1>
+							
+				<select1 ref="FR3">
+					<label>Participates in church or religion activities </label>
+					<item>
+						<label>Does not do this at all</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Does this a little</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Does this quite a bit</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>Does this a lot</label>
+						<value>3</value>
+					</item>
 				</select1>
-				
-			<label>8.Participates in community activities</label>
-			<select1 ref="q5h">
+				<select1 ref="FR4">
+					<label>Interacts positively with siblings</label>
+					<item>
+						<label>Does not do this at all</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Does this a little</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Does this quite a bit</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>Does this a lot</label>
+						<value>3</value>
+					</item>
+				</select1>
+				<select1 ref="FR5">
+					<label>Interacts positively with parents </label>
+					<item>
+						<label>Does not do this at all</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Does this a little</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Does this quite a bit</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>Does this a lot</label>
+						<value>3</value>
+					</item>
+					</select1>
+				<select1 ref="FR6">
+					<label>Trust a significant person with his or her life </label>
+					<item>
+						<label>Does not do this at all</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Does this a little</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Does this quite a bit</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>Does this a lot</label>
+						<value>3</value>
+					</item>
+					</select1>
+				<select1 ref="FR7">
+					<label>Asks for help</label>
+					<item>
+						<label>Does not do this at all</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Does this a little</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Does this quite a bit</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>Does this a lot</label>
+						<value>3</value>
+					</item>
+					</select1>
+				<select1 ref="FR8">
+					<label>Discusses problems with others</label>
+					<item>
+						<label>Does not do this at all</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Does this a little</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Does this quite a bit</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>Does this a lot</label>
+						<value>3</value>
+					</item>
+				</select1>	
+			</group>
+		</group>		
+		<!-- Child Emotions section -->
+		<group ref="/data/child-emotions">
+			<group ref="anger">
+			<label>Please indicate how often or true the behavior is of your child</label>
+			<hint>1=never or not true, 2=sometimes or somewhat true, 3=often or very true </hint>
+				<select1 ref="CHA1">
+					<label>Has temper tantrums or hot temper </label>
+					<item>
+						<label>Never or not true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>2</value>
+					</item>
+					<item>
+						<label>Often or very true</label>
+						<value>3</value>
+					</item>
+					</select1>	
+			<select1 ref="CHA2">
+				<label>Argues a lot with adults  </label>
 				<item>
-					<label>Does not do this at all</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Does this a little</label>
+					<label>Never or not true</label>
 					<value>1</value>
 				</item>
 				<item>
-					<label>Does this quite a bit</label>
+					<label>Sometimes or somewhat true</label>
 					<value>2</value>
 				</item>
 				<item>
-					<label>Does this a lot</label>
+					<label>Often or very true</label>
 					<value>3</value>
 				</item>
 				</select1>	
-			<label>9.Trusts a significant person with his or her life </label>
-			<select1 ref="q5i">
+			<select1 ref="CHA3">
+				<label>Argues a lot with peers    </label>
 				<item>
-					<label>Does not do this at all</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Does this a little</label>
+					<label>Never or not true</label>
 					<value>1</value>
 				</item>
 				<item>
-					<label>Does this quite a bit</label>
+					<label>Sometimes or somewhat true</label>
 					<value>2</value>
 				</item>
 				<item>
-					<label>Does this a lot</label>
+					<label>Often or very true</label>
 					<value>3</value>
 				</item>
 				</select1>	
 				
-			<label>10.Demonstrates a sense of belonging to family </label>
-			<select1 ref="q5j">
+		
+			<select1 ref="CHA4">
+				<label>Blames others for his or her own mistakes  </label>
 				<item>
-					<label>Does not do this at all</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Does this a little</label>
+					<label>Never or not true</label>
 					<value>1</value>
 				</item>
 				<item>
-					<label>Does this quite a bit</label>
+					<label>Sometimes or somewhat true</label>
 					<value>2</value>
 				</item>
 				<item>
-					<label>Does this a lot</label>
+					<label>Often or very true</label>
+					<value>3</value>
+				</item>
+			</select1>	
+			<select1 ref="CHA5">
+				<label>Is easily annoyed by others</label>
+				<item>
+					<label>Never or not true</label>
+					<value>1</value>
+				</item>
+				<item>
+					<label>Sometimes or somewhat true</label>
+					<value>2</value>
+				</item>
+				<item>
+					<label>Often or very true</label>
+					<value>3</value>
+				</item>
+			</select1>		
+			<select1 ref="CHA6">
+				<label>Is angry and resentful</label>
+				<item>
+					<label>Never or not true</label>
+					<value>1</value>
+				</item>
+				<item>
+					<label>Sometimes or somewhat true</label>
+					<value>2</value>
+				</item>
+				<item>
+					<label>Often or very true</label>
+					<value>3</value>
+				</item>
+			</select1>	
+			<select1 ref="CHA7">
+				<label>Gets back at people</label>
+				<item>
+					<label>Never or not true</label>
+					<value>1</value>
+				</item>
+				<item>
+					<label>Sometimes or somewhat true</label>
+					<value>2</value>
+				</item>
+				<item>
+					<label>Often or very true</label>
+					<value>3</value>
+				</item>
+			</select1>		
+		
+			<select1 ref="CHA8">
+				<label>Swears or uses curse words </label>
+				<item>
+					<label>Never or not true</label>
+					<value>1</value>
+				</item>
+				<item>
+					<label>Sometimes or somewhat true</label>
+					<value>2</value>
+				</item>
+				<item>
+					<label>Often or very true</label>
+					<value>3</value>
+				</item>
+			</select1>
+			<select1 ref="CHA9">
+				<label>Does things that annoy others </label>
+				<item>
+					<label>Never or not true</label>
+					<value>1</value>
+				</item>
+				<item>
+					<label>Sometimes or somewhat true</label>
+					<value>2</value>
+				</item>
+				<item>
+					<label>Often or very true</label>
 					<value>3</value>
 				</item>
 				</select1>	
 			</group>
-			
-			<!-- Anger  -->
-		<group ref="/data/anger">
-		<label>Please indicate how often or true the behavior is of your child</label>
-		<label>1.Has temper tantrums or hot temper </label>
-			<select1 ref="q6a">
-				<item>
-					<label>never or not true</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>often or very true</label>
-					<value>3</value>
-				</item>
-				</select1>	
-				
-		<label>2. Argues a lot with adults  </label>
-			<select1 ref="q6b">
-				<item>
-					<label>never or not true</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>often or very true</label>
-					<value>3</value>
-				</item>
-				</select1>	
-				
-		<label>3. Argues a lot with peers    </label>
-			<select1 ref="q6c">
-				<item>
-					<label>never or not true</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>often or very true</label>
-					<value>3</value>
-				</item>
-				</select1>	
-				
-		<label>4.Blames others for his/her own mistakes  </label>
-			<select1 ref="q6d">
-				<item>
-					<label>never or not true</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>often or very true</label>
-					<value>3</value>
-				</item>
-				</select1>	
-				
-		<label>5.Is easily annoyed by others  </label>
-			<select1 ref="q6e">
-				<item>
-					<label>never or not true</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>often or very true</label>
-					<value>3</value>
-				</item>
-				</select1>	
-				
-		<label>6. Is angry and resentful  </label>
-			<select1 ref="q6f">
-				<item>
-					<label>never or not true</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>often or very true</label>
-					<value>3</value>
-				</item>
-				</select1>	
-		
-		<label>7.Gets back at people    </label>
-			<select1 ref="q6g">
-				<item>
-					<label>never or not true</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>often or very true</label>
-					<value>3</value>
-				</item>
-				</select1>	
-				
-		<label>8.Swears or uses curse words    </label>
-			<select1 ref="q6h">
-				<item>
-					<label>never or not true</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>often or very true</label>
-					<value>3</value>
-				</item>
-				</select1>	
-				
-		<label>9.Does things that annoy others    </label>
-			<select1 ref="q6i">
-				<item>
-					<label>never or not true</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>often or very true</label>
-					<value>3</value>
-				</item>
-				</select1>	
+			<!-- Fear- Over Anxious -->
+			<group ref="fear-over-anxious">
+				<label>Please indicate how often or true the behavior is typical of your child…</label>
+				<hint>0=never or not true, 1=sometimes or somewhat true, 2=often or very true </hint>
+				<select1 ref="FAO1">
+					<label>Worries about things in the future  </label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+				<select1 ref="FAO2">
+					<label>Worries about past behavior</label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+				<select1 ref="FAO3">
+					<label>Worries about doing better at things</label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+				<select1 ref="FAO4">
+					<label>Is self-conscious or easily embarrassed</label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+				<select1 ref="FAO5">
+					<label>Needs to be told over and over that things are okay  </label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+				<select1 ref="FAO6">
+					<label>Is nervous, high strung or tense</label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+			</group>
+			<!-- Sadness -->
+			<group ref="sadness">
+				<label>Please indicate how often or true the behavior is typical of your child…</label>
+				<hint>0=never or not true, 1=sometimes or somewhat true, 2=often or very true </hint>
+				<select1 ref="CES1">
+					<label>Feels worthless or inferior  </label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+				<select1 ref="CES2">
+					<label>Is unhappy, sad or depressed  </label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+				<select1 ref="CES3">
+					<label>Is underactive, slow-moving, or lacks energy</label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+				<select1 ref="CES4">
+					<label>Cries a lot</label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+				<select1 ref="CES5">
+					<label>Seems lonely</label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+				<select1 ref="CES6">
+					<label>Doesn't smile or laugh much  </label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+				<select1 ref="CES7">
+					<label>Withdraws from peer activities</label>
+					<item>
+						<label>Never or not true</label>
+						<value>0</value>
+					</item>
+					<item>
+						<label>Sometimes or somewhat true</label>
+						<value>1</value>
+					</item>
+					<item>
+						<label>Often or very true </label>
+						<value>2</value>
+					</item>
+				</select1>
+			</group>
 		</group>
+		<!-- Child Behaviors -->
+		
+		
+		
     </h:body>
 </h:html>
