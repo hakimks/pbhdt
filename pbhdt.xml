@@ -25,6 +25,9 @@
 					<text id="pic3">
 						<value form="image">jr://images/pic2.jpg</value>
 					</text>
+					<text id="developmenttree">
+						<value form="image">jr://images/developmenttree.jpg</value>
+					</text>
 				</translation>
 				<translation lang="Luganda">
 					
@@ -60,12 +63,15 @@
 						<D13specify/>
 					</demographic>
 					<social-development>
-						<empathic-Behaviors>
+						<social_development_discussion>
 							<picture1/>
 							<picture2/>
 							<picture3/>
-							<intro/>
-							<intro1/>
+						</social_development_discussion>
+						<social_development_description/>
+						<empathic-Behaviors>
+							<empathic-description/>
+							<empathic-header/>
 							<EB1/>
 							<EB2/>
 							<EB3/>
@@ -163,12 +169,12 @@
 			<bind nodeset="/data/demographic/D13specify" relevant="/data/dedication/D13 = 3"/>
 			
 			<bind nodeset="/data/social-development" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
-			<bind nodeset="/data/social-development/empathic-Behaviors/picture1" readonly="true()" />
-			<bind nodeset="/data/social-development/empathic-Behaviors/picture2" readonly="true()" />
-			<bind nodeset="/data/social-development/empathic-Behaviors/picture3" readonly="true()" />
-			<bind nodeset="/data/social-development/empathic-Behaviors/intro" readonly="true()" />
-			<bind nodeset="/data/social-development/empathic-Behaviors/intro1" readonly="true()" />
+			<bind nodeset="/data/social-development/social_development_discussion/picture1" readonly="true()" />
+			<bind nodeset="/data/social-development/social_development_discussion/picture2" readonly="true()" />
+			<bind nodeset="/data/social-development/social_development_discussion/picture3" readonly="true()" />
+			<bind nodeset="/data/social-development/social_development_description" readonly="true()"/>
 			<bind nodeset="/data/social-development/empathic-Behaviors/EB1" />
+			<bind nodeset="/data/social-development/empathic-Behaviors/empathic-description" readonly="true()" />
 			<bind nodeset="/data/social-development/empathic-Behaviors/EB2" />
 			<bind nodeset="/data/social-development/empathic-Behaviors/EB3" />
 			<bind nodeset="/data/social-development/empathic-Behaviors/EB4" />
@@ -189,7 +195,7 @@
     </h:head>
     <h:body>
 		<!-- Eligibility Screening -->
-		<group ref="/data/eligibility">
+		<group ref="/data/eligibility" appearance="field-list">
 			<input ref="E1">
 				<label>Your Age</label>
 				<hint>If less than 18 years old; Stop here; Only greater than or equall to 18 years of age is qualified"></hint>
@@ -222,7 +228,7 @@
         
 		
 		<!-- Demographic -->
-		<group ref="/data/demographic">
+		<group ref="/data/demographic" appearance="field-list">
 		
 			<input ref="D1">
 				<label>FBO ID:</label>
@@ -372,29 +378,42 @@
 		
 		<!-- Child Social Development -->
 		<group ref="/data/social-development">
-			<label>In today’s discussion, we will talk about……. your child’s behaviors and relationship; your parenting approaches and strategies; and your family relationship and resources to support your child/children. </label>
-			<!-- pictures to display -->
-			<input ref="picture1">
-				<label ref="jr:itext('pic1')"></label>
-				<hint>Child’s behaviors and relationship  </hint>
+			<group ref="social_development_discussion" appearance="field-list">
+				<label>In today’s discussion, we will talk about……. your child’s behaviors and relationship; your parenting approaches and strategies; and your family relationship and resources to support your child/children. </label>
+				<!-- pictures to display -->
+				<input ref="picture1">
+					<hint>Child’s behaviors and relationship  </hint>
+					<label ref="jr:itext('pic1')"></label>
+				</input>
+				<input ref="picture2">
+					<hint>Parenting approaches</hint>
+					<label ref="jr:itext('pic1')"></label>
+				</input>
+				<input ref="picture3">
+					<hint>Family relationship and resources </hint>
+					<label ref="jr:itext('pic1')"></label>
+				</input>
+			</group>
+			<input ref="social_development_description">
+				<hint>A child’s growth is like a tree. There are five areas of child development (including social, emotional, behavioral, physical, and academic/learning). To support a strong tree, the child needs to have adequate nutrition, which is usually provided by parents and family members. All the areas listed in this picture are inter-related. For this part of the interview, I am going to ask you questions from each area. We will look at the results together after you have answered all the questions</hint>
+				<label ref="jr:itext('developmenttree')"></label>
+				
 			</input>
-			<input ref="picture2">
-				<label ref="jr:itext('pic1')"></label>
-				<hint>Parenting approaches</hint>
-			</input>
-			<input ref="picture2">
-				<label ref="jr:itext('pic1')"></label>
-				<hint>Family relationship and resources </hint>
-			</input>
-			<input ref="data/intro">
-				<label>A child’s growth is like a tree. There are five areas of child development (including social, emotional, behavioral, physical, and academic/learning). To support a strong tree, the child needs to have adequate nutrition, which is usually provided by parents and family members. All the areas listed in this picture are inter-related. For this part of the interview, I am going to ask you questions from each area. We will look at the results together after you have answered all the questions. </label>
-			</input>
-			<input ref="data/intro1">
-				<label>1=never, 2=rarely, 3=sometimes, 4=usually, 5=always</label>
-				<hint>In the past month, please describe……….</hint>
-			</input>
-			<group ref="empathic-Behaviors">
-				<select1 ref="EB1">
+			<group ref="empathic-Behaviors" appearance="field-list">
+				<input ref="empathic-description">
+					<hint>In the past month, please describe……….</hint>
+					<label>1=never, 2=rarely, 3=sometimes, 4=usually, 5=always</label>
+				</input>
+				<select1 appearance="label" ref="empathic-header">
+					<label></label>
+					<item><label>never</label><value>1</value></item>
+					<item><label>rarely</label><value>2</value></item>
+					<item><label>sometimes</label><value>3</value></item>
+					<item><label>usually</label><value>4</value></item>
+					<item><label>always</label><value>5</value></item>
+				</select1>
+				
+				<select1 appearance="list-nolabel" ref="EB1">
 					<label>How often has your child tried to stop a fight or argument </label>
 					<item>
 						<label>never</label>
@@ -419,7 +438,7 @@
 					</item>
 				</select1>
 			
-				<select1 ref="EB2">
+				<select1 appearance="list-nolabel" ref="EB2">
 					<label>How often has your child shared candies and extra food  </label>
 					<item>
 						<label>never</label>
@@ -443,7 +462,7 @@
 					</item>
 				</select1>
 				
-				<select1 ref="EB3">
+				<select1 appearance="list-nolabel" ref="EB3">
 					<label>How often has your child helped other children who are feeling sick </label>
 					<item>
 						<label>never</label>
@@ -467,7 +486,7 @@
 					</item>
 				</select1>
 				
-				<select1 ref="EB4">
+				<select1 appearance="list-nolabel" ref="EB4">
 					<label>How often has your child comforted a child who is crying or upset  </label>
 					<item>
 						<label>never</label>
@@ -491,7 +510,7 @@
 					</item>
 				</select1>
 			
-				<select1 ref="EB5">
+				<select1 appearance="list-nolabel" ref="EB5">
 					<label>How often has your child clapped or smiled if someone else does something well  </label>
 					<item>
 						<label>never</label>
