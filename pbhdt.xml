@@ -38,94 +38,104 @@
             <instance>
                 <data id="P-BHDT">
 					<eligibility>
-						<E1/>
-						<E2/>
-						<E3/>
+						<P_Age/>
+						<PCaregiver/>
+						<ToolN/>
 					</eligibility>
 					
 					<demographic>
-						<D1/>
-						<D2/>
-						<D3/>
-						<D4years/>
-						<D4months/>
-						<D5/>
-						<D6/>
-						<D7/>
-						<D8/>
-						<D9/>
-						<D10/>
-						<D10specify/>
-						<D11/>
-						<D11specify/>
-						<D12/>
-						<D13/>
-						<D13specify/>
+						<FBO_ID/>
+						<FamID/>
+						<ChildID/>
+						<C_Age_Years/>
+						<C_Age_Months/>
+						<ECC_Attend/>
+						<CGrade/>
+						<ChildN/>
+						<AdultN/>
+						<P.Gender/>
+						<RelChild/>
+						<RelChild_Specify/>
+						<Religion/>
+						<Religion_Specify/>
+						<P_Edu/>
+						<MaritalS/>
+						<MaritalS_Specify/>
 					</demographic>
-					<social-development>
-						<social_development_discussion>
-							<picture1/>
-							<picture2/>
-							<picture3/>
-						</social_development_discussion>
-						<social_development_description/>
-						<empathic-Behaviors>
-							<empathic-description/>
-							<empathic-header/>
-							<EB1/>
-							<EB2/>
-							<EB3/>
-							<EB4/>
-							<EB5/>
-						</empathic-Behaviors>
-						<pear-relationship>
-							<PR1/>
-							<PR2/>
-							<PR3/>
-							<PR4/>
-						</pear-relationship>
-						<family-relationship>
-							<FR1/>
-							<FR2/>
-							<FR3/>
-							<FR4/>
-							<FR5/>
-							<FR6/>
-							<FR7/>
-							<FR8/>
-						</family-relationship>
-					</social-development>
-					<child-emotions>	
-						<anger>
-							<CHA1/>
-							<CHA2/>
-							<CHA3/>
-							<CHA4/>
-							<CHA5/>
-							<CHA6/>
-							<CHA7/>
-							<CHA8/>
-							<CHA9/>					
-						</anger>
-						<fear-over-anxious>
-							<FAO1/>
-							<FAO2/>
-							<FAO3/>
-							<FAO4/>
-							<FAO5/>
-							<FAO6/>
-						</fear-over-anxious>
-						<sadness>
-							<CES1/>
-							<CES2/>
-							<CES3/>
-							<CES4/>
-							<CES5/>
-							<CES6/>
-							<CES7/>
-						</sadness>
+					<vignette>
+						<childV/>
+						<ParentingV/>
+						<FamV/>
+					</vignette>
+					<tree/>
+					<Social>
+						<S_EmpBeh>
+							<S_EmpBeh_Description/>
+							<S_EmpBeh-header/>
+							<S_EmpBeh_1/>
+							<S_EmpBeh_2/>
+							<S_EmpBeh_3/>
+							<S_EmpBeh_4/>
+							<S_EmpBeh_5/>
+						</S_EmpBeh>
+						<S_PeerRel>
+							<S_PeerRel_Description/>
+							<S_PeerRel-header/>
+							<S_PeerRel_1/>
+							<S_PeerRel_2/>
+							<S_PeerRel_3/>
+							<S_PeerRel_4/>
+						</S_PeerRel>
+						<S_FamRel>
+							<S_FamRel_Description/>
+							<S_FamRel-header/>
+							<S_FamRel_1/>
+							<S_FamRel_2/>
+							<S_FamRel_3/>
+							<S_FamRel_4/>
+							<S_FamRel_5/>
+							<S_FamRel_6/>
+							<S_FamRel_7/>
+							<S_FamRel_8/>
+						</S_FamRel>
+					</Social>
+					<Emotional>	
+						<E_Anger>
+							<E_Anger_Description/>
+							<E_Anger-header/>
+							<E_Anger_1/>
+							<E_Anger_2/>
+							<E_Anger_3/>
+							<E_Anger_4/>
+							<E_Anger_5/>
+							<E_Anger_6/>
+							<E_Anger_7/>
+							<E_Anger_8/>
+							<E_Anger_9/>					
+						</E_Anger>
+						<E_OvAnx>
+							<E_OvAnx_Description/>
+							<E_OvAnx-header/>
+							<E_OvAnx_1/>
+							<E_OvAnx_2/>
+							<E_OvAnx_3/>
+							<E_OvAnx_4/>
+							<E_OvAnx_5/>
+							<E_OvAnx_6/>
+						</E_OvAnx>
+						<E_Sad>
+							<E_Sad_description/>
+							<E_Sad-header/>
+							<E_Sad_1/>
+							<E_Sad_2/>
+							<E_Sad_3/>
+							<E_Sad_4/>
+							<E_Sad_5/>
+							<E_Sad_6/>
+							<E_Sad_7/>
+						</E_Sad>
 					
-					</child-emotions>
+					</Emotional>
 					
 					<meta>
 						<DeviceID/>
@@ -147,48 +157,53 @@
 			<bind nodeset="/data/meta/SubscriberID" type="string" jr:preload="property" jr:preloadParams="subscriberid"/>
 			<bind nodeset="/data/meta/phoneNumber" type="string" jr:preload="property" jr:preloadParams="phone number"/>
 			
-			<bind nodeset="/data/eligibility/E1" type="int" required="true()"/>
-			<bind nodeset="/data/eligibility/E2" required="true()" relevant="/data/eligibility/E1 &gt;= 18" />
-			<bind nodeset="/data/eligibility/E3" required="true()" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
+			<bind nodeset="/data/eligibility/P_Age" type="int" required="true()"/>
+			<bind nodeset="/data/eligibility/PCaregiver" required="true()" relevant="/data/eligibility/P_Age &gt;= 18" />
+			<bind nodeset="/data/eligibility/ToolN" required="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
 			
-			<bind nodeset="/data/demographic" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
-			<bind nodeset="/data/demographic/D2" type="int" />
-			<bind nodeset="/data/demographic/D3" type="int" />
-			<bind nodeset="/data/demographic/D4years" type="int" constraint=". &gt; 0 " jr:constraintMsg="Child’s years can not be 0"/>
-			<bind nodeset="/data/demographic/D4months" type="int" constraint=". &gt; 0 " jr:constraintMsg="Child’s Months can not be 0"/>
-			<bind nodeset="/data/demographic/D5" />
-			<bind nodeset="/data/demographic/D6" />
-			<bind nodeset="/data/demographic/D7" type="int"/>
-			<bind nodeset="/data/demographic/D8" type="int"/>
-			<bind nodeset="/data/demographic/D10" />
-			<bind nodeset="/data/demographic/D10specify" relevant="/data/demographic/D10 = 4" />
-			<bind nodeset="/data/demographic/D11" />
-			<bind nodeset="/data/demographic/D11specify" relevant="/data/demographic/D11 = 4"/>
-			<bind nodeset="/data/demographic/D12" />
-			<bind nodeset="/data/demographic/D13" />
-			<bind nodeset="/data/demographic/D13specify" relevant="/data/dedication/D13 = 3"/>
-			
-			<bind nodeset="/data/social-development" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
-			<bind nodeset="/data/social-development/social_development_discussion/picture1" readonly="true()" />
-			<bind nodeset="/data/social-development/social_development_discussion/picture2" readonly="true()" />
-			<bind nodeset="/data/social-development/social_development_discussion/picture3" readonly="true()" />
-			<bind nodeset="/data/social-development/social_development_description" readonly="true()"/>
-			<bind nodeset="/data/social-development/empathic-Behaviors/EB1" />
-			<bind nodeset="/data/social-development/empathic-Behaviors/empathic-description" readonly="true()" />
-			<bind nodeset="/data/social-development/empathic-Behaviors/EB2" />
-			<bind nodeset="/data/social-development/empathic-Behaviors/EB3" />
-			<bind nodeset="/data/social-development/empathic-Behaviors/EB4" />
-			<bind nodeset="/data/social-development/empathic-Behaviors/EB5" />
-						
-			<bind nodeset="/data/social-development/pear-relationship" />
-			
-			<bind nodeset="/data/social-development/family-relationship" />
+			<bind nodeset="/data/demographic" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/demographic/FamID" type="int" />
+			<bind nodeset="/data/demographic/ChildID" type="int" />
+			<bind nodeset="/data/demographic/C_Age_Years" type="int" constraint=". &gt; 0 " jr:constraintMsg="Child’s years can not be 0"/>
+			<bind nodeset="/data/demographic/C_Age_Months" type="int" constraint=". &gt; 0 " jr:constraintMsg="Child’s Months can not be 0"/>
+			<bind nodeset="/data/demographic/ECC_Attend" required="true()" />
+			<bind nodeset="/data/demographic/CGrade" relevant="/data/demographic/ECC_Attend = 1" />
+			<bind nodeset="/data/demographic/ChildN" type="int"/>
+			<bind nodeset="/data/demographic/AdultN" type="int"/>
+			<bind nodeset="/data/demographic/RelChild" />
+			<bind nodeset="/data/demographic/RelChild_Specify" relevant="/data/demographic/RelChild = 4" />
+			<bind nodeset="/data/demographic/Religion" />
+			<bind nodeset="/data/demographic/Religion_Specify" relevant="/data/demographic/Religion = 4"/>
+			<bind nodeset="/data/demographic/P_Edu" />
+			<bind nodeset="/data/demographic/MaritalS" />
+			<bind nodeset="/data/demographic/MaritalS_Specify" relevant="/data/dedication/MaritalS = 3"/>
 			
 			
-			<bind nodeset="/data/child-emotions" relevant="/data/eligibility/E1 &gt;= 18 and /data/eligibility/E2 = 1 " />
-			<bind nodeset="/data/child-emotions/anger"/>
-			<bind nodeset="/data/child-emotions/fear-over-anxious" />
-			<bind nodeset="/data/child-emotions/sadness" />
+			<bind nodeset="/data/vignette/childV" readonly="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/vignette/ParentingV" readonly="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/vignette/FamV" readonly="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/tree" readonly="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			
+			<bind nodeset="/data/Social" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/Social/S_EmpBeh/S_EmpBeh_Description" readonly="true()" />
+			<bind nodeset="/data/Social/S_EmpBeh/S_EmpBeh_1" />
+			<bind nodeset="/data/Social/S_EmpBeh/S_EmpBeh_2" />
+			<bind nodeset="/data/Social/S_EmpBeh/S_EmpBeh_3" />
+			<bind nodeset="/data/Social/S_EmpBeh/S_EmpBeh_4" />
+			<bind nodeset="/data/Social/S_EmpBeh/S_EmpBeh_5" />	
+			<bind nodeset="/data/Social/S_PeerRel" />
+			<bind nodeset="/data/Social/S_PeerRel/S_PeerRel_Description"  readonly="true()"/>
+			<bind nodeset="/data/Social/S_FamRel" />
+			<bind nodeset="/data/Social/S_FamRel/S_FamRel_Description" readonly="true()" />
+			
+			
+			<bind nodeset="/data/Emotional" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/Emotional/E_Anger"/>
+			<bind nodeset="/data/Emotional/E_Anger/E_Anger_Description" readonly="true()"/>
+			<bind nodeset="/data/Emotional/E_OvAnx" />
+			<bind nodeset="/data/Emotional/E_OvAnx/E_OvAnx_Description" readonly="true()" />
+			<bind nodeset="/data/Emotional/E_Sad" />
+			<bind nodeset="/data/Emotional/E_Sad/E_Sad_description" readonly="true()" />
 			
 			
         </model>
@@ -196,14 +211,14 @@
     <h:body>
 		<!-- Eligibility Screening -->
 		<group ref="/data/eligibility" appearance="field-list">
-			<input ref="E1">
+			<input ref="P_Age">
 				<label>Your Age</label>
-				<hint>If less than 18 years old; Stop here; Only greater than or equall to 18 years of age is qualified"></hint>
+				<hint>If less than 18 years old; Stop here; Only greater than or equal to 18 years of age is qualified"></hint>
 			</input>
 			
-			<select1 ref="E2">
+			<select1 ref="PCaregiver">
 				<label>Are you the primary caregiver and living with the child?"</label>
-				<hint>If NO,  STOP"></hint>
+				<hint>If NO, STOP"></hint>
 				<item>
 					<label ref="jr:itext('yes')"></label>
 					<value>1</value>
@@ -213,7 +228,7 @@
 					<value>0</value>
 				</item>
 			</select1>
-			<select1 ref="E3">
+			<select1 ref="ToolN">
 			<label>Is this the first time you are signing up for using the Digital Toolkit?</label>
 				<item>
 					<label ref="jr:itext('yes')"></label>
@@ -230,918 +245,460 @@
 		<!-- Demographic -->
 		<group ref="/data/demographic" appearance="field-list">
 		
-			<input ref="D1">
+			<input ref="FBO_ID">
 				<label>FBO ID:</label>
 			</input>
-			<input ref="D2">
+			<input ref="FamID">
 				<label>Family ID:</label>
 			</input>
-			<input ref="D3">
+			<input ref="ChildID">
 				<label>Child ID:</label>
 			</input>
-			<input ref="D4years">
+			<input ref="C_Age_Years">
 				<label>Child’s Age in Years:</label>
 			</input>
-			<input ref="D4months">
+			<input ref="C_Age_Months">
 				<label>Child’s Age in Months:</label>
 			</input>
 			
-			<select1 ref="D5">
-				<label>Attends school or early childhood care:</label>
-				<item>
-					<label ref="jr:itext('yes')"></label>
-					<value>1</value>
-				</item>
-				<item>
-					<label ref="jr:itext('no')"></label>
-					<value>0</value>
+			<select1 ref="ECC_Attend">
+				<label>Attend school or early childhood care:</label>
+				<item><label ref="jr:itext('yes')"></label><value>1</value></item>
+				<item><label ref="jr:itext('no')"></label><value>0</value>
 				</item>
 			</select1>
-			<input ref="D6">
+			<input ref="CGrade">
 				<label>If in primary school, which grade:</label>
 			</input>
-			<input ref="D7">
+			<input ref="ChildN">
 				<label>Number of children at home:</label>
 			</input> 
-			<input ref="D8">
+			<input ref="AdultN">
 				<label>Number of adults at home:</label>
 			</input>  
-			<select1 ref="D9">
+			<select1 ref="P.Gender">
 				<label>Your gender:</label>
-				<item>
-					<label>Male</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Female</label>
-					<value>0</value>
-				</item>
+				<item><label>Male</label><value>1</value></item>
+				<item><label>Female</label><value>0</value></item>
 			</select1>
-			<select1 ref="D10">
+			<select1 ref="RelChild">
 				<label>Your relationship with the child:</label>
-				<item>
-					<label>Mother</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Father</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Grandparent</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>Other</label>
-					<value>4</value>
-				</item>
+				<item><label>Mother</label><value>1</value></item>
+				<item><label>Father</label><value>2</value></item>
+				<item><label>Grandparent</label><value>3</value></item>
+				<item><label>Other</label><value>4</value></item>
 			</select1>
-			<input ref="D10specify" >
+			<input ref="RelChild_Specify" >
 				<label>Specify other relationship with the child</label>
 			</input>
-			<select1 ref="D11">
+			<select1 ref="Religion">
 				<label>What is Your Religion:</label>
-				<item>
-					<label>No religion</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Muslim</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Christian</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Catholic</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>Other religion </label>
-					<value>4</value>
-				</item>
+				<item><label>No religion</label><value>0</value></item>
+				<item><label>Muslim</label><value>1</value></item>
+				<item><label>Christian</label><value>2</value></item>
+				<item><label>Catholic</label><value>3</value></item>
+				<item><label>Other Religion </label><value>4</value></item>
 			</select1>
-			<input ref="D11specify" >
-				<label>Specify other religion</label>
+			<input ref="Religion_Specify" >
+				<label>Specify other Religion</label>
 			</input>
-			<select1 ref="D12">
+			<select1 ref="P_Edu">
 				<label>Your highest education:</label>
-				<item>
-					<label>None</label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Primary</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>O’level</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>A’level</label>
-					<value>3</value>
-				</item>
-				<item>
-					<label>Tertiary </label>
-					<value>4</value>
-				</item>
-				<item>
-					<label>Non Standard Curriculum </label>
-					<value>5</value>
-				</item>
+				<item><label>None</label><value>0</value></item>
+				<item><label>Primary</label><value>1</value></item>
+				<item><label>O’level</label><value>2</value></item>
+				<item><label>A’level</label><value>3</value></item>
+				<item><label>Tertiary </label><value>4</value></item>
+				<item><label>Non Standard Curriculum </label><value>5</value></item>
 			</select1>
-			<select1 ref="D13">
+			<select1 ref="MaritalS">
 				<label>Marital Status:</label>
-				<item>
-					<label>Single (Single/Widow/or Divorced) </label>
-					<value>0</value>
-				</item>
-				<item>
-					<label>Married</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Not married but live with a partner</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>other</label>
-					<value>3</value>
-				</item>
+				<item><label>Single (Single/Widow/or Divorced) </label><value>0</value></item>
+				<item><label>Married</label><value>1</value></item>
+				<item><label>Not married but live with a partner</label><value>2</value></item>
+				<item><label>other</label><value>3</value></item>
 				</select1>
-			<input ref="D13specify" >
+			<input ref="MaritalS_Specify" >
 				<label>Specify other Marital status</label>
 			</input>
 		</group>
-		
 		<!-- Child Social Development -->
-		<group ref="/data/social-development">
-			<group ref="social_development_discussion" appearance="field-list">
+			<group ref="vignette" appearance="field-list">
 				<label>In today’s discussion, we will talk about……. your child’s behaviors and relationship; your parenting approaches and strategies; and your family relationship and resources to support your child/children. </label>
 				<!-- pictures to display -->
-				<input ref="picture1">
+				<input ref="childV">
 					<hint>Child’s behaviors and relationship  </hint>
 					<label ref="jr:itext('pic1')"></label>
 				</input>
-				<input ref="picture2">
+				<input ref="ParentingV">
 					<hint>Parenting approaches</hint>
 					<label ref="jr:itext('pic1')"></label>
 				</input>
-				<input ref="picture3">
+				<input ref="FamV">
 					<hint>Family relationship and resources </hint>
 					<label ref="jr:itext('pic1')"></label>
 				</input>
 			</group>
-			<input ref="social_development_description">
+			<input ref="tree">
 				<hint>A child’s growth is like a tree. There are five areas of child development (including social, emotional, behavioral, physical, and academic/learning). To support a strong tree, the child needs to have adequate nutrition, which is usually provided by parents and family members. All the areas listed in this picture are inter-related. For this part of the interview, I am going to ask you questions from each area. We will look at the results together after you have answered all the questions</hint>
 				<label ref="jr:itext('developmenttree')"></label>
-				
 			</input>
-			<group ref="empathic-Behaviors" appearance="field-list">
-				<input ref="empathic-description">
-					<hint>In the past month, please describe……….</hint>
-					<label>1=never, 2=rarely, 3=sometimes, 4=usually, 5=always</label>
+	<!-- Child Social -->
+		<group ref="/data/Social">	
+			<group ref="S_EmpBeh" appearance="field-list">
+				<input ref="S_EmpBeh_Description">
+					<label>In the past month, please describe………</label>
+					<hint>1=Never, 2=Rarely, 3=Sometimes, 4=Usually, 5=Always</hint>
 				</input>
-				<select1 appearance="label" ref="empathic-header">
+				<select1 appearance="label" ref="S_EmpBeh-header">
 					<label></label>
-					<item><label>never</label><value>1</value></item>
-					<item><label>rarely</label><value>2</value></item>
-					<item><label>sometimes</label><value>3</value></item>
-					<item><label>usually</label><value>4</value></item>
-					<item><label>always</label><value>5</value></item>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
 				</select1>
 				
-				<select1 appearance="list-nolabel" ref="EB1">
+				<select1 appearance="list-nolabel" ref="S_EmpBeh_1">
 					<label>How often has your child tried to stop a fight or argument </label>
-					<item>
-						<label>never</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>rarely</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>sometimes</label>
-						<value>3</value>
-					</item>
-					
-					<item>
-						<label>usually</label>
-						<value>4</value>
-					</item>
-					<item>
-						<label>always</label>
-						<value>5</value>
-					</item>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
 				</select1>
 			
-				<select1 appearance="list-nolabel" ref="EB2">
+				<select1 appearance="list-nolabel" ref="S_EmpBeh_2">
 					<label>How often has your child shared candies and extra food  </label>
-					<item>
-						<label>never</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>rarely</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>sometimes</label>
-						<value>3</value>
-					</item>
-					<item>
-						<label>usually</label>
-						<value>4</value>
-					</item>
-					<item>
-						<label>always</label>
-						<value>5</value>
-					</item>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
 				</select1>
 				
-				<select1 appearance="list-nolabel" ref="EB3">
+				<select1 appearance="list-nolabel" ref="S_EmpBeh_3">
 					<label>How often has your child helped other children who are feeling sick </label>
-					<item>
-						<label>never</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>rarely</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>sometimes</label>
-						<value>3</value>
-					</item>
-					<item>
-						<label>usually</label>
-						<value>4</value>
-					</item>
-					<item>
-						<label>always</label>
-						<value>5</value>
-					</item>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
 				</select1>
 				
-				<select1 appearance="list-nolabel" ref="EB4">
+				<select1 appearance="list-nolabel" ref="S_EmpBeh_4">
 					<label>How often has your child comforted a child who is crying or upset  </label>
-					<item>
-						<label>never</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>rarely</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>sometimes</label>
-						<value>3</value>
-					</item>
-					<item>
-						<label>usually</label>
-						<value>4</value>
-					</item>
-					<item>
-						<label>always</label>
-						<value>5</value>
-					</item>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
 				</select1>
 			
-				<select1 appearance="list-nolabel" ref="EB5">
+				<select1 appearance="list-nolabel" ref="S_EmpBeh_5">
 					<label>How often has your child clapped or smiled if someone else does something well  </label>
-					<item>
-						<label>never</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>rarely</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>sometimes</label>
-						<value>3</value>
-					</item>
-					<item>
-						<label>usually</label>
-						<value>4</value>
-					</item>
-					<item>
-						<label>always</label>
-						<value>5</value>
-					</item>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
 				</select1>
 			</group>
-			<!-- pear-relationship -->
-			<group ref="pear-relationship">
-				<label>In the past month, please describe……….</label>
-				<hint>1=never, 2=rarely, 3=sometimes, 4=usually, 5=always</hint>
-				<select1 ref="PR1">
+			<!-- Peer Relationships -->
+			<group ref="S_PeerRel" appearance="field-list">
+				<input ref="S_PeerRel_Description">
+					<label>In the past month, please describe……….</label>
+					<hint>1=Never, 2=Rarely, 3=Sometimes, 4=Usually, 5=Always</hint>
+				</input>
+				<select1 appearance="label" ref="S_PeerRel-header">
+					<label></label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="S_PeerRel_1">
 					<label>How often your child has been left out by other children </label>
-					<item>
-						<label>never</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>rarely</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>sometimes</label>
-						<value>3</value>
-					</item>
-					<item>
-						<label>usually</label>
-						<value>4</value>
-					</item>
-					<item>
-						<label>always</label>
-						<value>5</value>
-					</item>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
 				</select1>
 				
-				<select1 ref="PR2">
+				<select1 appearance="list-nolabel" ref="S_PeerRel_2">
 					<label>How often other children have refused to let your child play with them </label>
-					<item>
-						<label>never</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>rarely</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>sometimes</label>
-						<value>3</value>
-					</item>
-					<item>
-						<label>usually</label>
-						<value>4</value>
-					</item>
-					<item>
-						<label>always</label>
-						<value>5</value>
-					</item>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
 				</select1>
 				
-				<select1 ref="PR3">
+				<select1 appearance="list-nolabel" ref="S_PeerRel_3">
 					<label>How often your child has been teased and made fun of by other children  </label>
-					<item>
-						<label>never</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>rarely</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>sometimes</label>
-						<value>3</value>
-					</item>
-					<item>
-						<label>usually</label>
-						<value>4</value>
-					</item>
-					<item>
-						<label>always</label>
-						<value>5</value>
-					</item>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
 				</select1>
 				
-				<select1 ref="PR4">
+				<select1 appearance="list-nolabel" ref="S_PeerRel_4">
 					<label>How often your child has been pushed or shoved around by other children </label>
-					<item>
-						<label>never</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>rarely</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>sometimes</label>
-						<value>3</value>
-					</item>
-					<item>
-						<label>usually</label>
-						<value>4</value>
-					</item>
-					<item>
-						<label>always</label>
-						<value>5</value>
-					</item>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
 				</select1>
 			</group> 
-			<!-- family-relationship  -->
-			<group ref="family-relationship">
-				<label>For each of the following statement, please tell me how much it is like your child…</label>
-				<hint>0=Does not do this at all, 1= Does this a little, 2= Does this quite a bit, 3=Does this a lot</hint>
-				<select1 ref="FR1">
+			<!-- Family Relationship  -->
+			<group ref="S_FamRel" appearance="field-list" >
+				<input ref="S_FamRel_Description">
+					<label>For each of the following statement, please tell me how much it is like your child…</label>
+					<hint>0 = Does not do this at all, 1 = Does this a little, 2 = Does this quite a bit, 3 = Does this a lot</hint>
+				</input>
+				<select1 appearance="label" ref="S_FamRel-header">
+					<label></label>
+					<item><label>Does not do this at all</label><value>0</value></item>
+					<item><label>Does this a little</label><value>1</value></item>
+					<item><label>Does this quite a bit</label><value>2</value></item>
+					<item><label>Does this a lot</label><value>3</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="S_FamRel_1">
 					<label>Participates in family activities </label>
-					<item>
-						<label>Does not do this at all</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Does this a little</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Does this quite a bit</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>Does this a lot</label>
-						<value>3</value>
-					</item>
+					<item><label>Does not do this at all</label><value>0</value></item>
+					<item><label>Does this a little</label><value>1</value></item>
+					<item><label>Does this quite a bit</label><value>2</value></item>
+					<item><label>Does this a lot</label><value>3</value></item>
 					</select1>
 					
 					
-				<select1 ref="FR2">
+				<select1 appearance="list-nolabel" ref="S_FamRel_2">
 					<label>Complies with rules at home </label>
-					<item>
-						<label>Does not do this at all</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Does this a little</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Does this quite a bit</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>Does this a lot</label>
-						<value>3</value>
-					</item>
+					<item><label>Does not do this at all</label><value>0</value></item>
+					<item><label>Does this a little</label><value>1</value></item>
+					<item><label>Does this quite a bit</label><value>2</value></item>
+					<item><label>Does this a lot</label><value>3</value></item>
 					</select1>
 							
-				<select1 ref="FR3">
+				<select1 appearance="list-nolabel" ref="S_FamRel_3">
 					<label>Participates in church or religion activities </label>
-					<item>
-						<label>Does not do this at all</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Does this a little</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Does this quite a bit</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>Does this a lot</label>
-						<value>3</value>
-					</item>
+					<item><label>Does not do this at all</label><value>0</value></item>
+					<item><label>Does this a little</label><value>1</value></item>
+					<item><label>Does this quite a bit</label><value>2</value></item>
+					<item><label>Does this a lot</label><value>3</value></item>
 				</select1>
-				<select1 ref="FR4">
+				<select1 appearance="list-nolabel" ref="S_FamRel_4">
 					<label>Interacts positively with siblings</label>
-					<item>
-						<label>Does not do this at all</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Does this a little</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Does this quite a bit</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>Does this a lot</label>
-						<value>3</value>
-					</item>
+					<item><label>Does not do this at all</label><value>0</value></item>
+					<item><label>Does this a little</label><value>1</value></item>
+					<item><label>Does this quite a bit</label><value>2</value></item>
+					<item><label>Does this a lot</label><value>3</value></item>
 				</select1>
-				<select1 ref="FR5">
+				<select1 appearance="list-nolabel" ref="S_FamRel_5">
 					<label>Interacts positively with parents </label>
-					<item>
-						<label>Does not do this at all</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Does this a little</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Does this quite a bit</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>Does this a lot</label>
-						<value>3</value>
-					</item>
+					<item><label>Does not do this at all</label><value>0</value></item>
+					<item><label>Does this a little</label><value>1</value></item>
+					<item><label>Does this quite a bit</label><value>2</value></item>
+					<item><label>Does this a lot</label><value>3</value></item>
 					</select1>
-				<select1 ref="FR6">
+				<select1 appearance="list-nolabel" ref="S_FamRel_6">
 					<label>Trust a significant person with his or her life </label>
-					<item>
-						<label>Does not do this at all</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Does this a little</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Does this quite a bit</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>Does this a lot</label>
-						<value>3</value>
-					</item>
+					<item><label>Does not do this at all</label><value>0</value></item>
+					<item><label>Does this a little</label><value>1</value></item>
+					<item><label>Does this quite a bit</label><value>2</value></item>
+					<item><label>Does this a lot</label><value>3</value></item>
 					</select1>
-				<select1 ref="FR7">
+				<select1 appearance="list-nolabel" ref="S_FamRel_7">
 					<label>Asks for help</label>
-					<item>
-						<label>Does not do this at all</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Does this a little</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Does this quite a bit</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>Does this a lot</label>
-						<value>3</value>
-					</item>
+					<item><label>Does not do this at all</label><value>0</value></item>
+					<item><label>Does this a little</label><value>1</value></item>
+					<item><label>Does this quite a bit</label><value>2</value></item>
+					<item><label>Does this a lot</label><value>3</value></item>
 					</select1>
-				<select1 ref="FR8">
+				<select1 appearance="list-nolabel" ref="S_FamRel_8">
 					<label>Discusses problems with others</label>
-					<item>
-						<label>Does not do this at all</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Does this a little</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Does this quite a bit</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>Does this a lot</label>
-						<value>3</value>
-					</item>
+					<item><label>Does not do this at all</label><value>0</value></item>
+					<item><label>Does this a little</label><value>1</value></item>
+					<item><label>Does this quite a bit</label><value>2</value></item>
+					<item><label>Does this a lot</label><value>3</value></item>
 				</select1>	
 			</group>
 		</group>		
 		<!-- Child Emotions section -->
-		<group ref="/data/child-emotions">
-			<group ref="anger">
-			<label>Please indicate how often or true the behavior is of your child</label>
-			<hint>1=never or not true, 2=sometimes or somewhat true, 3=often or very true </hint>
-				<select1 ref="CHA1">
+		<group ref="/data/Emotional">
+			<group ref="E_Anger" appearance="field-list" >
+				<input ref="E_Anger_Description">
+					<label>Please indicate how often or true the behavior is of your child</label>
+					<hint>0= Never or Not True, 2 = Sometimes or Somewhat True, 3 = Often or Very True </hint>
+				</input>
+				<select1 appearance="label" ref="E_Anger-header">
+					<label></label>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or somewhat true</label><value>1</value></item>
+					<item><label>Often or very true</label><value>2</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="E_Anger_1">
 					<label>Has temper tantrums or hot temper </label>
-					<item>
-						<label>Never or not true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>2</value>
-					</item>
-					<item>
-						<label>Often or very true</label>
-						<value>3</value>
-					</item>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or somewhat true</label><value>1</value></item>
+					<item><label>Often or very true</label><value>2</value></item>
+				</select1>	
+				<select1 appearance="list-nolabel" ref="E_Anger_2">
+					<label>Argues a lot with adults  </label>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or somewhat true</label><value>1</value></item>
+					<item><label>Often or very true</label><value>2</value></item>
+				</select1>	
+				<select1 appearance="list-nolabel" ref="E_Anger_3">
+					<label>Argues a lot with peers    </label>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or somewhat true</label><value>1</value></item>
+					<item><label>Often or very true</label><value>2</value></item>
+				</select1>	
+				<select1 appearance="list-nolabel" ref="E_Anger_4">
+					<label>Blames others for his or her own mistakes  </label>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or somewhat true</label><value>1</value></item>
+					<item><label>Often or very true</label><value>2</value></item>
+				</select1>	
+				<select1 appearance="list-nolabel" ref="E_Anger_5">
+					<label>Is easily annoyed by others</label>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or somewhat true</label><value>1</value></item>
+					<item><label>Often or very true</label><value>2</value></item>
+				</select1>		
+				<select1 appearance="list-nolabel" ref="E_Anger_6">
+					<label>Is angry and resentful</label>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or somewhat true</label><value>1</value></item>
+					<item><label>Often or very true</label><value>2</value></item>
+				</select1>	
+				<select1 appearance="list-nolabel" ref="E_Anger_7">
+					<label>Gets back at people</label>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or somewhat true</label><value>1</value></item>
+					<item><label>Often or very true</label><value>2</value></item>
+				</select1>		
+			
+				<select1 appearance="list-nolabel" ref="E_Anger_8">
+					<label>Swears or uses curse words </label>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or somewhat true</label><value>1</value></item>
+					<item><label>Often or very true</label><value>2</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="E_Anger_9">
+					<label>Does things that annoy others </label>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or somewhat true</label><value>1</value></item>
+					<item><label>Often or very true</label><value>2</value></item>
 					</select1>	
-			<select1 ref="CHA2">
-				<label>Argues a lot with adults  </label>
-				<item>
-					<label>Never or not true</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Often or very true</label>
-					<value>3</value>
-				</item>
-				</select1>	
-			<select1 ref="CHA3">
-				<label>Argues a lot with peers    </label>
-				<item>
-					<label>Never or not true</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Often or very true</label>
-					<value>3</value>
-				</item>
-				</select1>	
-				
-		
-			<select1 ref="CHA4">
-				<label>Blames others for his or her own mistakes  </label>
-				<item>
-					<label>Never or not true</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Often or very true</label>
-					<value>3</value>
-				</item>
-			</select1>	
-			<select1 ref="CHA5">
-				<label>Is easily annoyed by others</label>
-				<item>
-					<label>Never or not true</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Often or very true</label>
-					<value>3</value>
-				</item>
-			</select1>		
-			<select1 ref="CHA6">
-				<label>Is angry and resentful</label>
-				<item>
-					<label>Never or not true</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Often or very true</label>
-					<value>3</value>
-				</item>
-			</select1>	
-			<select1 ref="CHA7">
-				<label>Gets back at people</label>
-				<item>
-					<label>Never or not true</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Often or very true</label>
-					<value>3</value>
-				</item>
-			</select1>		
-		
-			<select1 ref="CHA8">
-				<label>Swears or uses curse words </label>
-				<item>
-					<label>Never or not true</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Often or very true</label>
-					<value>3</value>
-				</item>
-			</select1>
-			<select1 ref="CHA9">
-				<label>Does things that annoy others </label>
-				<item>
-					<label>Never or not true</label>
-					<value>1</value>
-				</item>
-				<item>
-					<label>Sometimes or somewhat true</label>
-					<value>2</value>
-				</item>
-				<item>
-					<label>Often or very true</label>
-					<value>3</value>
-				</item>
-				</select1>	
 			</group>
-			<!-- Fear- Over Anxious -->
-			<group ref="fear-over-anxious">
-				<label>Please indicate how often or true the behavior is typical of your child…</label>
-				<hint>0=never or not true, 1=sometimes or somewhat true, 2=often or very true </hint>
-				<select1 ref="FAO1">
+			<!-- Fear Over Anxious -->
+			<group ref="E_OvAnx" appearance="field-list" >
+				<input ref="E_OvAnx_Description">
+					<label>Please indicate how often or true the behavior is typical of your child…</label>
+					<hint>0 = Never or Not True, 1 = Sometimes or Somewhat True, 2 = Often or Very True </hint>
+				</input>
+				<select1 appearance="label" ref="E_OvAnx-header">
+					<label></label>
+					<item><label>Never or not True</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or Very True </label><value>2</value></item>
+				</select1>
+				<select1 appearance="list-nolabel"  ref="E_OvAnx_1">
 					<label>Worries about things in the future  </label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not True</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or Very True </label><value>2</value></item>
 				</select1>
-				<select1 ref="FAO2">
+				<select1 appearance="list-nolabel"  ref="E_OvAnx_2">
 					<label>Worries about past behavior</label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not True</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or Very True </label><value>2</value></item>
 				</select1>
-				<select1 ref="FAO3">
+				<select1 appearance="list-nolabel"  ref="E_OvAnx_3">
 					<label>Worries about doing better at things</label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not True</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or Very True </label><value>2</value></item>
 				</select1>
-				<select1 ref="FAO4">
+				<select1 appearance="list-nolabel"  ref="E_OvAnx_4">
 					<label>Is self-conscious or easily embarrassed</label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not True</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or Very True </label><value>2</value></item>
 				</select1>
-				<select1 ref="FAO5">
+				<select1 appearance="list-nolabel"  ref="E_OvAnx_5">
 					<label>Needs to be told over and over that things are okay  </label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not True</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or Very True </label><value>2</value></item>
 				</select1>
-				<select1 ref="FAO6">
+				<select1 appearance="list-nolabel"  ref="E_OvAnx_6">
 					<label>Is nervous, high strung or tense</label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not True</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or Very True </label><value>2</value></item>
 				</select1>
 			</group>
 			<!-- Sadness -->
-			<group ref="sadness">
-				<label>Please indicate how often or true the behavior is typical of your child…</label>
-				<hint>0=never or not true, 1=sometimes or somewhat true, 2=often or very true </hint>
-				<select1 ref="CES1">
+			<group ref="E_Sad" appearance="field-list" >
+				<input ref="E_Sad_description">
+					<label>Please indicate how often or true the behavior is typical of your child…</label>
+					<hint>0 = Never or not true, 1 =  Sometimes or somewhat true, 2 = Often or very true </hint>
+				</input>
+				<select1 appearance="label" ref="E_Sad-header">
+					<label></label>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or very true </label><value>2</value></item>
+				</select1>
+				<select1 appearance="list-nolabel"  ref="E_Sad_1">
 					<label>Feels worthless or inferior  </label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or very true </label><value>2</value></item>
 				</select1>
-				<select1 ref="CES2">
+				<select1 appearance="list-nolabel" ref="E_Sad_2">
 					<label>Is unhappy, sad or depressed  </label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or very true </label><value>2</value></item>
 				</select1>
-				<select1 ref="CES3">
+				<select1 appearance="list-nolabel" ref="E_Sad_3">
 					<label>Is underactive, slow-moving, or lacks energy</label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or very true </label><value>2</value></item>
 				</select1>
-				<select1 ref="CES4">
+				<select1 appearance="list-nolabel" ref="E_Sad_4">
 					<label>Cries a lot</label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or very true </label><value>2</value></item>
 				</select1>
-				<select1 ref="CES5">
+				<select1 appearance="list-nolabel" ref="E_Sad_5">
 					<label>Seems lonely</label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or very true </label><value>2</value></item>
 				</select1>
-				<select1 ref="CES6">
+				<select1 appearance="list-nolabel" ref="E_Sad_6">
 					<label>Doesn't smile or laugh much  </label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or very true </label><value>2</value></item>
 				</select1>
-				<select1 ref="CES7">
+				<select1 appearance="list-nolabel" ref="E_Sad_7">
 					<label>Withdraws from peer activities</label>
-					<item>
-						<label>Never or not true</label>
-						<value>0</value>
-					</item>
-					<item>
-						<label>Sometimes or somewhat true</label>
-						<value>1</value>
-					</item>
-					<item>
-						<label>Often or very true </label>
-						<value>2</value>
-					</item>
+					<item><label>Never or not true</label><value>0</value></item>
+					<item><label>Sometimes or Somewhat true</label><value>1</value></item>
+					<item><label>Often or very true </label><value>2</value></item>
 				</select1>
 			</group>
 		</group>
