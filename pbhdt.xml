@@ -28,6 +28,63 @@
 					<text id="developmenttree">
 						<value form="image">jr://images/developmenttree.jpg</value>
 					</text>
+					<text id="child_dev_set_img1">
+						<value form="image">jr://images/child_dev_set_img1.jpg</value>
+					</text>
+					<text id="child_dev_set_img2">
+						<value form="image">jr://images/child_dev_set_img2.jpg</value>
+					</text>
+					<text id="child_dev_set_img3">
+						<value form="image">jr://images/child_dev_set_img3.jpg</value>
+					</text>
+					<text id="child_dev_set_img4">
+						<value form="image">jr://images/child_dev_set_img4.jpg</value>
+					</text>
+					<text id="child_dev_set_img5">
+						<value form="image">jr://images/child_dev_set_img5.jpg</value>
+					</text>
+					<text id="child_dev_set_img6">
+						<value form="image">jr://images/child_dev_set_img6.jpg</value>
+					</text>
+					<text id="child_dev_set_img7">
+						<value form="image">jr://images/child_dev_set_img7.jpg</value>
+					</text>
+					<text id="child_dev_set_img8">
+						<value form="image">jr://images/child_dev_set_img8.jpg</value>
+					</text>
+					<text id="child_dev_set_img9">
+						<value form="image">jr://images/child_dev_set_img9.jpg</value>
+					</text>
+					<text id="parenting_beh_set_img1"> 
+						<value form="image">jr://images/parenting_beh_set_img1.jpg</value>
+					</text>
+					<text id="parenting_beh_set_img2"> 
+						<value form="image">jr://images/parenting_beh_set_img2.jpg</value>
+					</text>
+					<text id="parenting_beh_set_img3"> 
+						<value form="image">jr://images/parenting_beh_set_img3.jpg</value>
+					</text>
+					<text id="parenting_beh_set_img4"> 
+						<value form="image">jr://images/parenting_beh_set_img4.jpg</value>
+					</text>
+					<text id="parenting_beh_set_img5"> 
+						<value form="image">jr://images/parenting_beh_set_img5.jpg</value>
+					</text>
+					<text id="parenting_beh_set_img6"> 
+						<value form="image">jr://images/parenting_beh_set_img6.jpg</value>
+					</text>
+					<text id="parenting_beh_set_img7"> 
+						<value form="image">jr://images/parenting_beh_set_img7.jpg</value>
+					</text>
+					<text id="family_set_img1">
+						<value form="image">jr://images/family_set_img1.jpg</value>
+					</text>
+					<text id="family_set_img2">
+						<value form="image">jr://images/family_set_img2.jpg</value>
+					</text>
+					<text id="family_set_img3">
+						<value form="image">jr://images/family_set_img3.jpg</value>
+					</text>
 				</translation>
 				<translation lang="Luganda">
 					
@@ -62,12 +119,14 @@
 						<MaritalS/>
 						<MaritalS_Specify/>
 					</demographic>
-					<vignette>
+					<child_social_dev>
+						<vignette>
 						<childV/>
 						<ParentingV/>
 						<FamV/>
-					</vignette>
-					<tree/>
+						</vignette>
+						<tree/>
+					</child_social_dev>
 					<Social>
 						<S_EmpBeh>
 							<S_EmpBeh_Description/>
@@ -136,6 +195,167 @@
 						</E_Sad>
 					
 					</Emotional>
+					<Behaviors>
+						<B_self_regulation>
+							<B_self_regulation_description/>
+							<B_self_regulation_header/>
+							<B_self_regulation_1/>
+							<B_self_regulation_2/>
+							<B_self_regulation_3/>
+							<B_self_regulation_4/>
+							<B_self_regulation_5/>
+							<B_self_regulation_6/>
+						</B_self_regulation>
+						<B_positive_attitude>
+							<B_positive_attitude_description/>
+							<B_positive_attitude_header/>
+							<B_positive_attitude_1/>
+							<B_positive_attitude_2/>
+							<B_positive_attitude_3/>
+							<B_positive_attitude_4/>
+						</B_positive_attitude>
+					</Behaviors>
+					<Child_physical>
+						<CP_Overall_health_1>
+							<CP_Overall_health_1_description/>
+							<CP_Overall_health_1_header />
+							<CP_Overall_health_1_1/>
+						</CP_Overall_health_1>
+						<CP_Overall_health_2>
+							<CP_Overall_health_2_description/>
+							<CP_Overall_health_2_header/>
+							<CP_Overall_health_2_1/>
+						</CP_Overall_health_2>
+						<CP_sleep_rel_impirement>
+							<CP_sleep_rel_impirement_description/>
+							<CP_sleep_rel_impirement_header/>
+							<CP_sleep_rel_impirement_1/>
+							<CP_sleep_rel_impirement_2/>
+							<CP_sleep_rel_impirement_3/>
+							<CP_sleep_rel_impirement_4/>
+						</CP_sleep_rel_impirement>
+						<CP_special_needs>
+							<CP_special_needs_description/>
+							<CP_special_needs_header />
+							<CP_special_needs_1/>
+							<CP_special_needs_2/>
+						</CP_special_needs>
+					
+					</Child_physical>
+					<Child_Academic_Learning>
+						<CAL_academic_learning>
+							<CAL_academic_learning_description/>
+							<CAL_academic_learning_header />
+							<CAL_academic_learning_1/>
+							<CAL_academic_learning_2/>
+							<CAL_academic_learning_3/>
+							<CAL_academic_learning_4/>
+							<CAL_academic_learning_5/>
+							<CAL_academic_learning_6/>
+						</CAL_academic_learning>
+					</Child_Academic_Learning>
+					<parenting_Measures>
+						<pm_nurturing>
+							<pm_nurturing_description/>
+							<pm_nurturing_header/>
+							<pm_nurturing_1/>
+							<pm_nurturing_2/>
+							<pm_nurturing_3/>
+							<pm_nurturing_4/>
+							<pm_nurturing_5/>
+							<pm_nurturing_6/>
+							<pm_nurturing_7/>
+							<pm_nurturing_8/>
+							<pm_nurturing_9/>
+							<pm_nurturing_10/>
+							<pm_nurturing_11/>
+							<pm_nurturing_12/>
+							<pm_nurturing_13/>
+							<pm_nurturing_14/>
+							<pm_nurturing_15/>
+							<pm_nurturing_16/>
+							<pm_nurturing_17/>
+							<pm_nurturing_18/>
+						</pm_nurturing>
+						<pm_involvement_educ>
+							<pm_involvement_educ_description/>
+							<pm_involvement_educ_header/>
+							<pm_involvement_educ_1/>
+						</pm_involvement_educ>
+						<pm_involvement_educ_2>
+							<pm_involvement_educ_description_2/>
+							<pm_involvement_educ_header_2/>
+							<pm_involvement_educ_1_2/>
+						</pm_involvement_educ_2>
+						<pm_household_rules>
+							<pm_household_rules_description/>
+							<pm_household_rules_header/>
+							<pm_household_rules_1/>
+							<pm_household_rules_2/>
+							<pm_household_rules_3/>
+							<pm_household_rules_4/>
+						</pm_household_rules>
+						<pm_inapproppriate>
+							<pm_inapproppriate_description/>
+							<pm_inapproppriate_header/>
+							<pm_inapproppriate_1/>
+							<pm_inapproppriate_2/>
+							<pm_inapproppriate_3/>
+							<pm_inapproppriate_4/>
+							<pm_inapproppriate_5/>
+							<pm_inapproppriate_6/>
+						</pm_inapproppriate>
+						<pm_effective_parent>
+							<pm_effective_parent_description/>
+							<pm_effective_parent_header/>
+							<pm_effective_parent_1/>
+							<pm_effective_parent_2/>
+						</pm_effective_parent>
+						<pm_effective_parent_q3>
+							<pm_effective_parent_q3_description/>
+							<pm_effective_parent_q3_header/>
+							<pm_effective_parent_3/>
+						</pm_effective_parent_q3>
+						<pm_effective_parent_q4>
+							<pm_effective_parent_q4_description/>
+							<pm_effective_parent_q4_header/>
+							<pm_effective_parent_4/>
+						</pm_effective_parent_q4>
+						
+					</parenting_Measures>
+					<family_func>
+						<ff_fam_relationship>
+							<ff_fam_relationship_description/>
+							<ff_fam_relationship_header/>
+							<ff_fam_relationship_1/>
+							<ff_fam_relationship_2/>
+							<ff_fam_relationship_3/>
+							<ff_fam_relationship_4/>
+							<ff_fam_relationship_5/>
+							<ff_fam_relationship_6/>
+						</ff_fam_relationship>
+						<ff_resilience>
+							<ff_resilience_description/>
+							<ff_resilience_header/>
+							<ff_resilience_1/>
+							<ff_resilience_2/>
+							<ff_resilience_3/>
+							<ff_resilience_4/>
+						</ff_resilience>
+						<ff_wellbeing>
+							<ff_wellbeing_description/>
+							<ff_wellbeing_header/>
+							<ff_wellbeing_1/>
+							<ff_wellbeing_2/>
+							<ff_wellbeing_3/>
+							<ff_wellbeing_4/>
+						</ff_wellbeing>
+					</family_func>
+					<picture_selection>
+						<child_behavior_set/>
+						<parenting_beh_set/>
+						<family_set/>
+					</picture_selection>
 					
 					<meta>
 						<DeviceID/>
@@ -166,7 +386,7 @@
 			<bind nodeset="/data/demographic/ChildID" type="int" />
 			<bind nodeset="/data/demographic/C_Age_Years" type="int" constraint=". &gt; 0 " jr:constraintMsg="Child’s years can not be 0"/>
 			<bind nodeset="/data/demographic/C_Age_Months" type="int" constraint=". &gt; 0 " jr:constraintMsg="Child’s Months can not be 0"/>
-			<bind nodeset="/data/demographic/ECC_Attend" required="true()" />
+			<bind nodeset="/data/demographic/ECC_Attend" />
 			<bind nodeset="/data/demographic/CGrade" relevant="/data/demographic/ECC_Attend = 1" />
 			<bind nodeset="/data/demographic/ChildN" type="int"/>
 			<bind nodeset="/data/demographic/AdultN" type="int"/>
@@ -179,10 +399,10 @@
 			<bind nodeset="/data/demographic/MaritalS_Specify" relevant="/data/dedication/MaritalS = 3"/>
 			
 			
-			<bind nodeset="/data/vignette/childV" readonly="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
-			<bind nodeset="/data/vignette/ParentingV" readonly="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
-			<bind nodeset="/data/vignette/FamV" readonly="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
-			<bind nodeset="/data/tree" readonly="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/child_social_dev/vignette/childV" readonly="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/child_social_dev/vignette/ParentingV" readonly="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/child_social_dev/vignette/FamV" readonly="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/child_social_dev/tree" readonly="true()" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
 			
 			<bind nodeset="/data/Social" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
 			<bind nodeset="/data/Social/S_EmpBeh/S_EmpBeh_Description" readonly="true()" />
@@ -205,12 +425,42 @@
 			<bind nodeset="/data/Emotional/E_Sad" />
 			<bind nodeset="/data/Emotional/E_Sad/E_Sad_description" readonly="true()" />
 			
+			<bind nodeset="/data/Behaviors" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/Behaviors/B_self_regulation/B_self_regulation_description" readonly="true()" />
+			<bind nodeset="/data/Behaviors/B_positive_attitude/B_positive_attitude_description" readonly="true()" />
+			
+			<bind nodeset="/data/Child_physical" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/Child_physical/CP_Overall_health_1/CP_Overall_health_1_description" readonly="true()" />
+			<bind nodeset="/data/Child_physical/CP_Overall_health_2/CP_Overall_health_2_description" readonly="true()" />
+			<bind nodeset="/data/Child_physical/CP_sleep_rel_impirement/CP_sleep_rel_impirement_description" readonly="true()" />
+			<bind nodeset="/data/Child_physical/CP_special_needs/CP_special_needs_description" readonly="true()"/>
+			
+			<bind nodeset="/data/Child_Academic_Learning" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/Child_Academic_Learning/CAL_academic_learning/CAL_academic_learning_description" readonly="true()"/>
+			
+			<bind nodeset="/data/parenting_Measures" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/parenting_Measures/pm_nurturing/pm_nurturing_description" readonly="true()" />
+			<bind nodeset="/data/parenting_Measures/pm_involvement_educ/pm_involvement_educ_description" readonly="true()" />
+			<bind nodeset="/data/parenting_Measures/pm_involvement_educ_2/pm_involvement_educ_description_2" readonly="true()" />
+			<bind nodeset="/data/parenting_Measures/pm_household_rules/pm_household_rules_description" readonly="true()" />
+			<bind nodeset="/data/parenting_Measures/pm_inapproppriate/pm_inapproppriate_description" readonly="true()" />
+			<bind nodeset="/data/parenting_Measures/pm_effective_parent/pm_effective_parent_description" readonly="true()" />
+			<bind nodeset="/data/parenting_Measures/pm_effective_parent_q3/pm_effective_parent_q3_description" readonly="true()" />
+			<bind nodeset="/data/parenting_Measures/pm_effective_parent_q4/pm_effective_parent_q4_description" readonly="true()" />
+			
+			<bind nodeset="/data/family_func" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
+			<bind nodeset="/data/family_func/ff_fam_relationship/ff_fam_relationship_description" readonly="true()"/>
+			<bind nodeset="/data/family_func/ff_resilience/ff_resilience_description" readonly="true()"/>
+			<bind nodeset="/data/family_func/ff_wellbeing/ff_wellbeing_description" readonly="true()"/>
+			
+			<bind nodeset="/data/picture_selection" relevant="/data/eligibility/P_Age &gt;= 18 and /data/eligibility/PCaregiver = 1 " />
 			
         </model>
     </h:head>
     <h:body>
 		<!-- Eligibility Screening -->
 		<group ref="/data/eligibility" appearance="field-list">
+			<label>Eligibility Screening</label>
 			<input ref="P_Age">
 				<label>Your Age</label>
 				<hint>If less than 18 years old; Stop here; Only greater than or equal to 18 years of age is qualified"></hint>
@@ -244,7 +494,7 @@
 		
 		<!-- Demographic -->
 		<group ref="/data/demographic" appearance="field-list">
-		
+			<label>Demographic</label>
 			<input ref="FBO_ID">
 				<label>FBO ID:</label>
 			</input>
@@ -323,6 +573,8 @@
 			</input>
 		</group>
 		<!-- Child Social Development -->
+		<group ref="child_social_dev">
+			<label>Child Social Development</label>
 			<group ref="vignette" appearance="field-list">
 				<label>In today’s discussion, we will talk about……. your child’s behaviors and relationship; your parenting approaches and strategies; and your family relationship and resources to support your child/children. </label>
 				<!-- pictures to display -->
@@ -343,8 +595,10 @@
 				<hint>A child’s growth is like a tree. There are five areas of child development (including social, emotional, behavioral, physical, and academic/learning). To support a strong tree, the child needs to have adequate nutrition, which is usually provided by parents and family members. All the areas listed in this picture are inter-related. For this part of the interview, I am going to ask you questions from each area. We will look at the results together after you have answered all the questions</hint>
 				<label ref="jr:itext('developmenttree')"></label>
 			</input>
+		</group>
 	<!-- Child Social -->
 		<group ref="/data/Social">	
+			<label>Child Social</label>
 			<group ref="S_EmpBeh" appearance="field-list">
 				<input ref="S_EmpBeh_Description">
 					<label>In the past month, please describe………</label>
@@ -530,6 +784,7 @@
 		</group>		
 		<!-- Child Emotions section -->
 		<group ref="/data/Emotional">
+			<label>Child Emotions section</label>
 			<group ref="E_Anger" appearance="field-list" >
 				<input ref="E_Anger_Description">
 					<label>Please indicate how often or true the behavior is of your child</label>
@@ -703,7 +958,879 @@
 			</group>
 		</group>
 		<!-- Child Behaviors -->
-		
+		<group ref="/data/Behaviors">
+			<label>Child Behaviors</label>
+			<group ref="B_self_regulation" appearance="field-list" >
+				<input ref="B_self_regulation_description">
+					<label>Please give your answers based on how well your child can ……</label>
+					<hint>0=Not at all, 1= A little, 2= Moderately well, 3=Well, 4=Very well</hint>
+				</input>
+				<select1 appearance="label" ref="B_self_regulation_header">
+					<label></label>
+					<item><label>Not at all</label><value>0</value></item>
+					<item><label>A little</label><value>1</value></item>
+					<item><label>Moderately well </label><value>2</value></item>
+					<item><label>Well</label><value>3</value></item>
+					<item><label>Very Well</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="B_self_regulation_1">
+					<label>Accept things not going his/her way</label>
+					<item><label>Not at all</label><value>0</value></item>
+					<item><label>A little</label><value>1</value></item>
+					<item><label>Moderately well </label><value>2</value></item>
+					<item><label>Well</label><value>3</value></item>
+					<item><label>Very Well</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="B_self_regulation_2">
+					<label>Cope with failure</label>
+					<item><label>Not at all</label><value>0</value></item>
+					<item><label>A little</label><value>1</value></item>
+					<item><label>Moderately well </label><value>2</value></item>
+					<item><label>Well</label><value>3</value></item>
+					<item><label>Very Well</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="B_self_regulation_3">
+					<label>Think before acting</label>
+					<item><label>Not at all</label><value>0</value></item>
+					<item><label>A little</label><value>1</value></item>
+					<item><label>Moderately well </label><value>2</value></item>
+					<item><label>Well</label><value>3</value></item>
+					<item><label>Very Well</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="B_self_regulation_4">
+					<label>Calm down when excited</label>
+					<item><label>Not at all</label><value>0</value></item>
+					<item><label>A little</label><value>1</value></item>
+					<item><label>Moderately well </label><value>2</value></item>
+					<item><label>Well</label><value>3</value></item>
+					<item><label>Very Well</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="B_self_regulation_5">
+					<label>Do what he/she is told </label>
+					<item><label>Not at all</label><value>0</value></item>
+					<item><label>A little</label><value>1</value></item>
+					<item><label>Moderately well </label><value>2</value></item>
+					<item><label>Well</label><value>3</value></item>
+					<item><label>Very Well</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="B_self_regulation_6">
+					<label>Control temper when in the face of disagreement</label>
+					<item><label>Not at all</label><value>0</value></item>
+					<item><label>A little</label><value>1</value></item>
+					<item><label>Moderately well </label><value>2</value></item>
+					<item><label>Well</label><value>3</value></item>
+					<item><label>Very Well</label><value>4</value></item>
+				</select1>
+				
+			</group>
+			<group ref="B_positive_attitude" appearance="field-list" >
+				<input ref="B_positive_attitude_description">
+					<label>Please respond to how much each statement describes your child based on the past 7 days:</label>
+					<hint>1=Not at all, 2=A little, 3=Somewhat, 4=Quite a bit, 5=very much</hint>
+				</input>
+				<select1 appearance="label" ref="B_positive_attitude_header">
+					<label></label>
+					<item><label>Not at all</label><value>1</value></item>
+					<item><label>A little</label><value>2</value></item>
+					<item><label>Somewhat</label><value>3</value></item>
+					<item><label>Quite a bit</label><value>4</value></item>
+					<item><label>Very much</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="B_positive_attitude_1">
+					<label>My child was happy, cheerful, joyful</label>
+					<item><label>Not at all</label><value>1</value></item>
+					<item><label>A little</label><value>2</value></item>
+					<item><label>Somewhat</label><value>3</value></item>
+					<item><label>Quite a bit</label><value>4</value></item>
+					<item><label>Very much</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="B_positive_attitude_2">
+					<label>My child was strong</label>
+					<item><label>Not at all</label><value>1</value></item>
+					<item><label>A little</label><value>2</value></item>
+					<item><label>Somewhat</label><value>3</value></item>
+					<item><label>Quite a bit</label><value>4</value></item>
+					<item><label>Very much</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="B_positive_attitude_3">
+					<label>My child was proud/confident  </label>
+					<item><label>Not at all</label><value>1</value></item>
+					<item><label>A little</label><value>2</value></item>
+					<item><label>Somewhat</label><value>3</value></item>
+					<item><label>Quite a bit</label><value>4</value></item>
+					<item><label>Very much</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="B_positive_attitude_4">
+					<label>My child was persistent/determined</label>
+					<item><label>Not at all</label><value>1</value></item>
+					<item><label>A little</label><value>2</value></item>
+					<item><label>Somewhat</label><value>3</value></item>
+					<item><label>Quite a bit</label><value>4</value></item>
+					<item><label>Very much</label><value>5</value></item>
+				</select1>
+			</group>
+		</group>
+		<!-- Child Physical -->
+		<group ref="/data/Child_physical">
+			<label>Child Physical</label>
+			<!-- Overall Health -->
+			<group ref="CP_Overall_health_1" appearance="field-list" >
+				<input ref="CP_Overall_health_1_description">
+					<label>Overall Health</label>
+					<hint>1= Poor; 2= Not very good; 3= Good; 4= Very Good/Excellent</hint>
+				</input>
+				<select1 appearance="label" ref="CP_Overall_health_1_header">
+					<label></label>
+					<item><label>Poor</label><value>1</value></item>
+					<item><label>Not very good</label><value>2</value></item>
+					<item><label>Good</label><value>3</value></item>
+					<item><label>Very Good/Excellent</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CP_Overall_health_1_1">
+					<label>Would you say your child’s health is…</label>
+					<item><label>Poor</label><value>1</value></item>
+					<item><label>Not very good</label><value>2</value></item>
+					<item><label>Good</label><value>3</value></item>
+					<item><label>Very Good/Excellent</label><value>4</value></item>
+				</select1>
+			</group>
+			<group ref="CP_Overall_health_2" appearance="field-list" >
+				<input ref="CP_Overall_health_2_description">
+					<label>Overall Health</label>
+					<hint>1=Not true; 2=Somewhat true; 3= Certainly true</hint>
+				</input>
+				<select1 appearance="label" ref="CP_Overall_health_2_header">
+					<label></label>
+					<item><label>Not true</label><value>1</value></item>
+					<item><label>Somewhat true</label><value>2</value></item>
+					<item><label>Certainly true</label><value>3</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CP_Overall_health_2_1">
+					<label>Compared with other children of his/her age, would you say your child falls sick easily?</label>
+					<item><label>Not true</label><value>1</value></item>
+					<item><label>Somewhat true</label><value>2</value></item>
+					<item><label>Certainly true</label><value>3</value></item>
+				</select1>
+			</group>
+			<!-- Sleep Related Impairment -->
+			<group ref="CP_sleep_rel_impirement" appearance="field-list" >
+				<input ref="CP_sleep_rel_impirement_description">
+					<label>Sleep Related Impairment - In the past 7 days……</label>
+					<hint>1=Never, 2=Rarely, 3=Sometimes, 4=Usually, 5=Always</hint>
+				</input>
+				<select1 appearance="label" ref="CP_sleep_rel_impirement_header">
+					<label></label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CP_sleep_rel_impirement_1">
+					<label>My child was sleepy during the daytime</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CP_sleep_rel_impirement_2">
+					<label>My child had a hard time concentrating because he/she was sleepy</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CP_sleep_rel_impirement_3">
+					<label>My child had a hard time getting things done because he/she was sleepy</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CP_sleep_rel_impirement_4">
+					<label>My child had problems during the day because of poor sleep</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Rarely</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Usually</label><value>4</value></item>
+					<item><label>Always</label><value>5</value></item>
+				</select1>
+			</group>
+			<!-- Special Needs -->
+			<group ref="CP_special_needs" appearance="field-list" >
+				<input ref="CP_special_needs_description">
+					<label>Special Needs</label>
+					<hint>0=No; 1=Yes</hint>
+				</input>
+				<select1 appearance="label" ref="CP_special_needs_header">
+					<label></label>
+					<item><label>No</label><value>0</value></item>
+					<item><label>Yes</label><value>1</value></item>
+					
+				</select1>
+				<select1 appearance="list-nolabel" ref="CP_special_needs_1">
+					<label>Does your child have any serious delay in sitting, standing or walking?</label>
+					<item><label>No</label><value>0</value></item>
+					<item><label>Yes</label><value>1</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CP_special_needs_2">
+					<label>Does your child appear in any way mentally backward, dull or slow?</label>
+					<item><label>No</label><value>0</value></item>
+					<item><label>Yes</label><value>1</value></item>
+				</select1>
+			</group>
+		</group>
+		<!-- Child Academic & Learning  -->
+		<group ref="/data/Child_Academic_Learning" >
+			<label>Child Academic and Learning </label>
+			<group ref="CAL_academic_learning" appearance="field-list" >
+				<input ref="CAL_academic_learning_description">
+					<label>Academic Learning - Please rate how often does your child do each of the following thing</label>
+					<hint>1=Never, 2=Seldom, 3=Sometimes, 4=Often, 5=All the time</hint>
+				</input>
+				<select1 appearance="label" ref="CAL_academic_learning_header">
+					<label></label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>All the time</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CAL_academic_learning_1">
+					<label>My child pays attention when given instructions for assignment or activities</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>All the time</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CAL_academic_learning_2">
+					<label>My child shows interest in learning new things</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>All the time</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CAL_academic_learning_3">
+					<label>My child enjoys learning new things from older children or adults</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>All the time</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CAL_academic_learning_4">
+					<label>My child copes well with the assignments set in school</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>All the time</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CAL_academic_learning_5">
+					<label>My child enjoys the school</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>All the time</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="CAL_academic_learning_6">
+					<label>My child makes lots of mistakes when doing minor assignments or homework </label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>All the time</label><value>5</value></item>
+				</select1>
+			</group>
+		</group>
+		<!-- Parenting Measures  -->
+		<group ref="/data/parenting_Measures">
+			<label>Parenting Measures</label>
+			<!-- Nurturing Parenting -->
+			<group ref="pm_nurturing" appearance="field-list" >
+				<input ref="pm_nurturing_description">
+					<label>Nurturing Parenting - When your child behaves well or does a good job at something, how often do you do each of the following things……</label>
+					<hint>1=Never, 2=Seldom, 3=Sometime, 4=Often, 5=Very often</hint>
+				</input>
+				<select1 appearance="label" ref="pm_nurturing_header">
+					<label></label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_1">
+					<label>Praise or compliment your child</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_2">
+					<label>Give your child a hug, kiss, pat, handshake, thumbs up or “high five”</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_3">
+					<label>Give him/her something (such as a stickers, a small toy) or give him/her money for good behavior</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_4">
+					<label>Give him/her a special or an extra privilege (such extra play time, go to the movies, special activity for good behavior) </label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<input ref="pm_nurturing_description">
+					<label>Nurturing Parenting - When your child misbehaves, how often do you do each of the following things………</label>
+					<hint>1=Never, 2=Seldom, 3=Sometime, 4=Often, 5=Very often</hint>
+				</input>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_5">
+					<label>Take away privileges (such as forbid him/her to do something he/she likes; playing sport)</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_6">
+					<label>Ignore misbehavior that is non-disruptive</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_7">
+					<label>Give him a time-out (e.g., put him/her in a separate quiet place but remain in the room so you can watch him/her) </label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_8">
+					<label>Warn of consequences for misbehavior (e.g., loss of privileges).</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_9">
+					<label>Give him/her something else to do to redirect misbehaviors</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_10">
+					<label>Find out what made my child misbehave</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_11">
+					<label>Discuss the problem with him/her or ask questions.</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_12">
+					<label>Help my child deal with the issue that made him/her misbehave</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_13">
+					<label>Label (describe) his/her feelings (e.g., anger) related to misbehavior</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<input ref="pm_nurturing_description">
+					<label>Nurturing Parenting - In general, how often do you do the following things………</label>
+					<hint>1=Never, 2=Seldom, 3=Sometime, 4=Often, 5=Very often</hint>
+				</input>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_14">
+					<label>Help your child use distraction, relaxation, or positive self-talk coping strategies to calm down him/her emotion and feel better</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_15">
+					<label>Make things fun (e.g., use song and games) to help your child follow directions</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_16">
+					<label>Give clear, positive directions when asking your child  to do something </label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<input ref="pm_nurturing_description">
+					<label>Nurturing Parenting - Over the past month, when your child has shown negative emotion (such as showing anger, sadness or frustration), how often have you done the following things………</label>
+					<hint>1=Never, 2=Seldom, 3=Sometime, 4=Often, 5=Very often</hint>
+				</input>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_17">
+					<label>I have helped my child deal with the issue that made him/her angry or sad</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_nurturing_18">
+					<label>I have comforted my child</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+			</group>
+			<!-- Involvement in Education -->
+			<group ref="pm_involvement_educ" appearance="field-list" >
+				<input ref="pm_involvement_educ_description">
+					<label>Involvement in Education - Over the last 2 days,……</label>
+					<hint>1=Less than 1/2 hour; 2=0.5-1 hours; 3= 1-1.5 hours; 4= 1.5-2 hours; 5=2-2.5 hours; 6= 2.5-3 hours; 7= 3 or more hours.</hint>
+				</input>
+				<select1 appearance="label" ref="pm_involvement_educ_header">
+					<label></label>
+					<item><label>Less than 1/2 hour</label><value>1</value></item>
+					<item><label>0.5-1 hours</label><value>2</value></item>
+					<item><label>1-1.5 hours</label><value>3</value></item>
+					<item><label>1.5-2 hours</label><value>4</value></item>
+					<item><label>2-2.5 hours</label><value>5</value></item>
+					<item><label>2.5-3 hours</label><value>6</value></item>
+					<item><label>3 or more hours</label><value>7</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_involvement_educ_1">
+					<label>1.	How many hours in total have you had any learning activities with your child (such as spend time talking about learning or school activities, doing reading together, telling stories, doing homework, etc.) </label>
+					<item><label>Less than 1/2 hour</label><value>1</value></item>
+					<item><label>0.5-1 hours</label><value>2</value></item>
+					<item><label>1-1.5 hours</label><value>3</value></item>
+					<item><label>1.5-2 hours</label><value>4</value></item>
+					<item><label>2-2.5 hours</label><value>5</value></item>
+					<item><label>2.5-3 hours</label><value>6</value></item>
+					<item><label>3 or more hours</label><value>7</value></item>
+				</select1>
+			</group>
+			<group ref="pm_involvement_educ_2" appearance="field-list" >
+				<input ref="pm_involvement_educ_description_2">
+					<label>Involvement in Education - Over the last 2 days,……</label>
+					<hint>1= Never; 2=Once; 3=Twice; 4= 3 times; 5= 4 or 5 times; 6=6 or 7 times; 7=more than 7 times</hint>
+				</input>
+				<select1 appearance="label" ref="pm_involvement_educ_header_2">
+					<label></label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Once</label><value>2</value></item>
+					<item><label>Twice</label><value>3</value></item>
+					<item><label>3 Times</label><value>4</value></item>
+					<item><label>4 or 5 times</label><value>5</value></item>
+					<item><label>6 or 7 times</label><value>6</value></item>
+					<item><label>more than 7 times</label><value>7</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_involvement_educ_1_2">
+					<label>2.	Have you done any non-school-type activities with your child (such as going some places for fun, playing, working on a hobby or craft, etc.)?</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Once</label><value>2</value></item>
+					<item><label>Twice</label><value>3</value></item>
+					<item><label>3 Times</label><value>4</value></item>
+					<item><label>4 or 5 times</label><value>5</value></item>
+					<item><label>6 or 7 times</label><value>6</value></item>
+					<item><label>more than 7 times</label><value>7</value></item>
+				</select1>
+			</group>
+			<!-- Household Rules-->
+			<group ref="pm_household_rules" appearance="field-list" >
+				<input ref="pm_household_rules_description">
+					<label>Household Rules - Please rate how much you agree or disagree with the following statements.</label>
+					<hint>1=Strongly disagree, 3=Neither agree or disagree, 5=Strongly agree</hint>
+				</input>
+				<select1 appearance="label" ref="pm_household_rules_header">
+					<label></label>
+					<item><label>Strongly disagree</label><value>1</value></item>
+					<item><label>Neither agree or disagree</label><value>3</value></item>
+					<item><label>Strongly agree</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_household_rules_1">
+					<label>I have made clear rules or expectations for my child about doing chores (such as putting away toys)</label>
+					<item><label>Strongly disagree</label><value>1</value></item>
+					<item><label>Neither agree or disagree</label><value>3</value></item>
+					<item><label>Strongly agree</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_household_rules_2">
+					<label>I have made clear rules or expectations for my child about not fighting, stealing, and lying</label>
+					<item><label>Strongly disagree</label><value>1</value></item>
+					<item><label>Neither agree or disagree</label><value>3</value></item>
+					<item><label>Strongly agree</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_household_rules_3">
+					<label>I have made clear rules or expectations for my child about going to bed and getting up on time</label>
+					<item><label>Strongly disagree</label><value>1</value></item>
+					<item><label>Neither agree or disagree</label><value>3</value></item>
+					<item><label>Strongly agree</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_household_rules_4">
+					<label>I have made clear rules or expectations for my child about the time for doing academic learning activities (such as reading, homework, practicing letter writing) </label>
+					<item><label>Strongly disagree</label><value>1</value></item>
+					<item><label>Neither agree or disagree</label><value>3</value></item>
+					<item><label>Strongly agree</label><value>5</value></item>
+				</select1>
+			</group>
+			<!-- Inappropriate Strategies -->
+			<group ref="pm_inapproppriate" appearance="field-list" >
+				<input ref="pm_inapproppriate_description">
+					<label>Inappropriate Strategies - When my child misbehaves or shows negative emotion, how often do you do each of the following things………</label>
+					<hint>(1=Never, 2=Seldom, 3=Sometime, 4=Often, 5=Very often)</hint>
+				</input>
+				<select1 appearance="label" ref="pm_inapproppriate_header">
+					<label></label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_inapproppriate_1">
+					<label>Raise your voice (scold, shout, or yell).</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_inapproppriate_2">
+					<label>Get your child to correct the problem or make up for his/her mistake.</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_inapproppriate_3">
+					<label>Threaten to punish him/her, without following through with a punishment.</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_inapproppriate_4">
+					<label>Spanked, hit or slapped him/her with bare hand.</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_inapproppriate_5">
+					<label>Hit him/her using a stick, belt, or other hard object.</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_inapproppriate_6">
+					<label>Called him/her dumb, lazy, or another name like that.</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Very often</label><value>5</value></item>
+				</select1>
+			</group>
+			<!-- Effective/Competent Parenting -->
+			<group ref="pm_effective_parent" appearance="field-list" >
+				<input ref="pm_effective_parent_description">
+					<label>Effective/Competent Parenting - </label>
+					<hint>1=Never, 2=Seldom, 3=Sometime, 4=Often, 5=Almost always</hint>
+				</input>
+				<select1 appearance="label" ref="pm_effective_parent_header">
+					<label></label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Almost always</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_effective_parent_1">
+					<label>Is the discipline you use effective for your child (does it work?)</label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Almost always</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_effective_parent_2">
+					<label>When you punish your child, does his behavior get better? </label>
+					<item><label>Never</label><value>1</value></item>
+					<item><label>Seldom</label><value>2</value></item>
+					<item><label>Sometimes</label><value>3</value></item>
+					<item><label>Often</label><value>4</value></item>
+					<item><label>Almost always</label><value>5</value></item>
+				</select1>
+			</group>
+			<group ref="pm_effective_parent_q3" appearance="field-list" >
+				<input ref="pm_effective_parent_q3_description">
+					<label>Effective/Competent Parenting - </label>
+					<hint>(1) Much harder than I expected; (2) Somewhat harder than I expected; (3) About as hard as I expected; (4) Somewhat easier than I expected; (5) much easier than I expected.</hint>
+				</input>
+				<select1 appearance="label" ref="pm_effective_parent_q3_header">
+					<label></label>
+					<item><label>Much harder than I expected</label><value>1</value></item>
+					<item><label>Somewhat harder than I expected</label><value>2</value></item>
+					<item><label>About as hard as I expected</label><value>3</value></item>
+					<item><label>somewhat easier than I expected</label><value>4</value></item>
+					<item><label>Much easier than I expected</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_effective_parent_3">
+					<label>I found that getting my child to do something or stop doing something is:</label>
+					<item><label>Much harder than I expected</label><value>1</value></item>
+					<item><label>Somewhat harder than I expected</label><value>2</value></item>
+					<item><label>About as hard as I expected</label><value>3</value></item>
+					<item><label>somewhat easier than I expected</label><value>4</value></item>
+					<item><label>Much easier than I expected</label><value>5</value></item>
+				</select1>
+			</group>
+			<group ref="pm_effective_parent_q4" appearance="field-list" >
+				<input ref="pm_effective_parent_q4_description">
+					<label>Effective/Competent Parenting - </label>
+					<hint>(1) Not very good at being a parent; (2) A person who has some trouble being a parent; (3) an average parent; (4) A better than average parent; (5) A very good parents</hint>
+				</input>
+				<select1 appearance="label" ref="pm_effective_parent_q4_header">
+					<label></label>
+					<item><label>Not very good at being a parent</label><value>1</value></item>
+					<item><label>A person who has some trouble being a parent</label><value>2</value></item>
+					<item><label>An average parent</label><value>3</value></item>
+					<item><label>A better than average parent</label><value>4</value></item>
+					<item><label>A very good parents</label><value>5</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="pm_effective_parent_4">
+					<label>I feel that I am: </label>
+					<item><label>Not very good at being a parent</label><value>1</value></item>
+					<item><label>A person who has some trouble being a parent</label><value>2</value></item>
+					<item><label>An average parent</label><value>3</value></item>
+					<item><label>A better than average parent</label><value>4</value></item>
+					<item><label>A very good parents</label><value>5</value></item>
+				</select1>
+			</group>
+		</group>
+		<!-- Family Functioning -->
+		<group ref="/data/family_func">
+			<label>Family Functioning</label>
+			<!-- Family Relationship and Support -->
+			<group ref="ff_fam_relationship" appearance="field-list" >
+				<input ref="ff_fam_relationship_description">
+					<label>Family Relationship and Support - General Functioning (Supportive Relationships, Problem solving and emotional expression). Please read each statement and decide how well it describes your family</label>
+					<hint>1=Strongly agree, 2=Agree, 3=Disagree, 4=Strongly disagree</hint>
+				</input>
+				<select1 appearance="label" ref="ff_fam_relationship_header">
+					<label></label>
+					<item><label>Strongly agree</label><value>1</value></item>
+					<item><label>Agree</label><value>2</value></item>
+					<item><label>Disagree</label><value>3</value></item>
+					<item><label>Strongly disagree</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_fam_relationship_1">
+					<label>Planning family activities is difficult because we misunderstand each other</label>
+					<item><label>Strongly agree</label><value>1</value></item>
+					<item><label>Agree</label><value>2</value></item>
+					<item><label>Disagree</label><value>3</value></item>
+					<item><label>Strongly disagree</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_fam_relationship_2">
+					<label>In time of crisis, we can turn to each other for support. (REVERSE CODE)</label>
+					<item><label>Strongly agree</label><value>1</value></item>
+					<item><label>Agree</label><value>2</value></item>
+					<item><label>Disagree</label><value>3</value></item>
+					<item><label>Strongly disagree</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_fam_relationship_3">
+					<label>Individuals are accepted for what they are. (REVERSE CODE)</label>
+					<item><label>Strongly agree</label><value>1</value></item>
+					<item><label>Agree</label><value>2</value></item>
+					<item><label>Disagree</label><value>3</value></item>
+					<item><label>Strongly disagree</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_fam_relationship_4">
+					<label>We avoid discussing our fears and concerns.</label>
+					<item><label>Strongly agree</label><value>1</value></item>
+					<item><label>Agree</label><value>2</value></item>
+					<item><label>Disagree</label><value>3</value></item>
+					<item><label>Strongly disagree</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_fam_relationship_5">
+					<label>There are lots of bad feelings in the family.</label>
+					<item><label>Strongly agree</label><value>1</value></item>
+					<item><label>Agree</label><value>2</value></item>
+					<item><label>Disagree</label><value>3</value></item>
+					<item><label>Strongly disagree</label><value>4</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_fam_relationship_6">
+					<label>We are able to make decisions about how to solve problems. (REVERSE CODE)</label>
+					<item><label>Strongly agree</label><value>1</value></item>
+					<item><label>Agree</label><value>2</value></item>
+					<item><label>Disagree</label><value>3</value></item>
+					<item><label>Strongly disagree</label><value>4</value></item>
+				</select1>
+			</group>
+			<!-- Resilience and Positive Focus -->
+			<group ref="ff_resilience" appearance="field-list" >
+				<input ref="ff_resilience_description">
+					<label>Resilience and Positive Focus - Please read each statement and indicate the extent to which it is true for your family. There are no right or wrong answers. Please give your honest opinion and feelings.</label>
+					<hint>0=Not at all like my family, 1= Not much  like my family, 2=  Like my family,  3= almost always like my family </hint>
+				</input>
+				<select1 appearance="label" ref="ff_resilience_header">
+					<label></label>
+					<item><label>Not at all like my family</label><value>0</value></item>
+					<item><label>Not much  like my family</label><value>1</value></item>
+					<item><label>Like my family</label><value>2</value></item>
+					<item><label>Almost always like my family</label><value>3</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_resilience_1">
+					<label>We believe that something good comes out of the worst situations.</label>
+					<item><label>Not at all like my family</label><value>0</value></item>
+					<item><label>Not much  like my family</label><value>1</value></item>
+					<item><label>Like my family</label><value>2</value></item>
+					<item><label>Almost always like my family</label><value>3</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_resilience_2">
+					<label>If something beyond our control is constantly upsetting to our family, we find things to do that keep our minds off our worries.</label>
+					<item><label>Not at all like my family</label><value>0</value></item>
+					<item><label>Not much  like my family</label><value>1</value></item>
+					<item><label>Like my family</label><value>2</value></item>
+					<item><label>Almost always like my family</label><value>3</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_resilience_3">
+					<label>No matter what happens in our family, we try to look “at the bright side of things.”</label>
+					<item><label>Not at all like my family</label><value>0</value></item>
+					<item><label>Not much  like my family</label><value>1</value></item>
+					<item><label>Like my family</label><value>2</value></item>
+					<item><label>Almost always like my family</label><value>3</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_resilience_4">
+					<label>If we have a problem or concern that seems overwhelming, we try to forget it for a while.</label>
+					<item><label>Not at all like my family</label><value>0</value></item>
+					<item><label>Not much  like my family</label><value>1</value></item>
+					<item><label>Like my family</label><value>2</value></item>
+					<item><label>Almost always like my family</label><value>3</value></item>
+				</select1>
+			</group>
+			<!-- Parental Wellbeing  -->
+			<group ref="ff_wellbeing" appearance="field-list" >
+				<input ref="ff_wellbeing_description">
+					<label>Parental Wellbeing - Over the last 2 weeks, how often have you been bothered by any of the following problems </label>
+					<hint>0=Not at all; 1= several days, 2= More than half the days, 3=Nearly everyday </hint>
+				</input>
+				<select1 appearance="label" ref="ff_wellbeing_header">
+					<label></label>
+					<item><label>Not at all</label><value>0</value></item>
+					<item><label>several days</label><value>1</value></item>
+					<item><label>More than half the days</label><value>2</value></item>
+					<item><label>Nearly everyday</label><value>3</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_wellbeing_1">
+					<label>Feeling nervous, anxious or on edge</label>
+					<item><label>Not at all</label><value>0</value></item>
+					<item><label>several days</label><value>1</value></item>
+					<item><label>More than half the days</label><value>2</value></item>
+					<item><label>Nearly everyday</label><value>3</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_wellbeing_2">
+					<label>Not being able to stop or control worrying</label>
+					<item><label>Not at all</label><value>0</value></item>
+					<item><label>several days</label><value>1</value></item>
+					<item><label>More than half the days</label><value>2</value></item>
+					<item><label>Nearly everyday</label><value>3</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_wellbeing_3">
+					<label>Little interest or pleasure in doing things</label>
+					<item><label>Not at all</label><value>0</value></item>
+					<item><label>several days</label><value>1</value></item>
+					<item><label>More than half the days</label><value>2</value></item>
+					<item><label>Nearly everyday</label><value>3</value></item>
+				</select1>
+				<select1 appearance="list-nolabel" ref="ff_wellbeing_4">
+					<label>Feeling down, depressed or hopeless</label>
+					<item><label>Not at all</label><value>0</value></item>
+					<item><label>several days</label><value>1</value></item>
+					<item><label>More than half the days</label><value>2</value></item>
+					<item><label>Nearly everyday</label><value>3</value></item>
+				</select1>
+			</group>
+		</group>
+		<!-- Picture Selection -->
+		<group ref="/data/picture_selection">
+			<label>Picture Selection</label>
+			<select appearance="compact" ref="child_behavior_set">
+				<label>Child Behavior Set - Please review sets of pictures and select those that are like your child, you (parent), and your family</label>
+				<hint>Select all that apply.</hint>
+				<item><label ref="jr:itext('child_dev_set_img1')"></label><value>1</value></item>
+				<item><label ref="jr:itext('child_dev_set_img2')"></label><value>2</value></item>
+				<item><label ref="jr:itext('child_dev_set_img3')"></label><value>3</value></item>
+				<item><label ref="jr:itext('child_dev_set_img4')"></label><value>4</value></item>
+				<item><label ref="jr:itext('child_dev_set_img5')"></label><value>5</value></item>
+				<item><label ref="jr:itext('child_dev_set_img6')"></label><value>6</value></item>
+				<item><label ref="jr:itext('child_dev_set_img7')"></label><value>7</value></item>
+				<item><label ref="jr:itext('child_dev_set_img8')"></label><value>8</value></item>
+				<item><label ref="jr:itext('child_dev_set_img9')"></label><value>9</value></item>
+			</select>
+			<select appearance="compact" ref="parenting_beh_set">
+				<label>Parenting Behavior Set - Please review sets of pictures and select those that are like your child, you (parent), and your family</label>
+				<hint>Select all that apply.</hint>
+				<item><label ref="jr:itext('parenting_beh_set_img1')"></label><value>1</value></item>
+				<item><label ref="jr:itext('parenting_beh_set_img2')"></label><value>2</value></item>
+				<item><label ref="jr:itext('parenting_beh_set_img3')"></label><value>3</value></item>
+				<item><label ref="jr:itext('parenting_beh_set_img4')"></label><value>4</value></item>
+				<item><label ref="jr:itext('parenting_beh_set_img5')"></label><value>5</value></item>
+				<item><label ref="jr:itext('parenting_beh_set_img6')"></label><value>6</value></item>
+				<item><label ref="jr:itext('parenting_beh_set_img7')"></label><value>7</value></item>
+			</select>
+			<select appearance="compact" ref="family_set">
+				<label>Please review sets of pictures and select those that are like your child, you (parent), and your family</label>
+				<hint>Select all that apply.</hint>
+				<item><label ref="jr:itext('family_set_img1')"></label><value>1</value></item>
+				<item><label ref="jr:itext('family_set_img2')"></label><value>1</value></item>
+				<item><label ref="jr:itext('family_set_img3')"></label><value>1</value></item>
+			</select>
+		</group>
 		
 		
     </h:body>
